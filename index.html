@@ -333,6 +333,12 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
 .case-body li b { color: var(--ink); font-weight: 600; }
 .case-body .role { background: var(--sand); border: 0; border-radius: 16px; padding: 1.1rem 1.3rem; }
 .case-body .role p { color: var(--ink); }
+.case details[open] summary { display: none; }
+.case details[open] .case-body { padding-top: clamp(1.5rem, 3.5vw, 2.25rem); }
+.case-body > .actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+.case-body > .kpis { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; margin: 0.4rem 0 0.6rem; background: var(--bg); }
+.case-close { justify-self: start; font: 600 0.95rem/1 var(--font); color: var(--emph); background: none; border: 0; padding: 0.4rem 0; cursor: pointer; }
+.case-close:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
 .case-src { font-size: 0.82rem; color: var(--soft); }
 .case-gallery { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem !important; }
 .case-gallery figure { margin: 0; display: grid; gap: 0.45rem; }
@@ -461,187 +467,182 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
     </div>
   </section>
 
-  <section id="cases" aria-labelledby="cases-h" style="background:var(--sand)">
-    <div class="in">
-      <div class="head"><p class="label">Case studies</p><h2 id="cases-h">Selected case studies</h2><p>Four projects told from challenge to result, showing the strategy behind the work and what I did hands-on.</p></div>
-      <div class="cases">
+  <section aria-labelledby="cases-h" id="cases" style="background:var(--sand)">
+<div class="in">
+<div class="head"><p class="label">Case studies</p><h2 id="cases-h">Selected case studies</h2><p>Four projects told from challenge to result, showing the strategy behind the work and what I did hands-on.</p></div>
+<div class="cases">
+<article aria-labelledby="c1-h" class="case">
+<div class="case-top">
+<div class="case-intro">
+<p class="tags">Moonlite Labs<i>|</i>Event marketing &amp; stakeholder engagement<i>|</i>Sep 2026</p>
+<h3 id="c1-h">Bringing an AI creative platform to TIFF's first industry market</h3>
+<p class="lead">I planned and ran Moonlite Labs' seven-day exhibition at TIFF: The Market end to end, from the first approach to the organizers to post-event follow-up, keeping delegates, media, partners, creators and colleagues engaged throughout.</p>
+</div>
+<figure class="case-img"><img alt="The Moonlite Labs team at its booth at TIFF: The Market" loading="lazy" src="cases/tiff-team.jpg"/></figure>
+</div>
 
-        <article class="case" aria-labelledby="c1-h">
-          <div class="case-top">
-            <div class="case-intro">
-              <p class="tags">Moonlite Labs<i>|</i>Event marketing &amp; stakeholder engagement<i>|</i>Sep 2026</p>
-              <h3 id="c1-h">Bringing an AI creative platform to TIFF's first industry market</h3>
-              <p class="lead">I planned and ran Moonlite Labs' seven-day exhibition at TIFF: The Market end to end, from the first approach to the organizers to post-event follow-up, keeping delegates, media, partners, creators and colleagues engaged throughout.</p>
-            </div>
-            <figure class="case-img"><img src="cases/tiff-team.jpg" loading="lazy" alt="The Moonlite Labs team at its booth at TIFF: The Market"></figure>
-          </div>
-          <div class="kpis">
-            <div class="kpi"><b>60%+</b><span>open rates on delegate email campaigns</span></div>
-            <div class="kpi"><b>1 day → several</b><span>activation extended because of strong demand</span></div>
-            <div class="kpi"><b>CBC News</b><span>coverage featuring our Founder and CEO</span></div>
-            <div class="kpi"><b>Minister visit</b><span>Canadian Identity and Culture, at our stand</span></div>
-          </div>
-          <details>
-            <summary>Read the full case study</summary>
-            <div class="case-body">
-              <div><h4>Challenge</h4><p>In September 2026, TIFF launched its first industry market, bringing together the filmmakers, producers and studios Moonlite Labs serves. With a small team and a fixed date, the company had to stand out among 238 exhibitors, show film professionals what the platform could do for their own projects, and turn booth conversations into lasting relationships.</p></div>
-              <div><h4>Strategy</h4><p>I recognized the market's relevance to our target customers, approached the organizers and developed the exhibition and booth activation strategy. I built the plan around participation, inviting delegates to bring their own ideas and watch them become scenes on the spot, and around credibility, with a showcase of work by creators using the platform. Every channel, from email and social media to the booth itself, carried the same message about the creative use of AI.</p></div>
-              <div class="wide"><h4>Execution</h4>
-                <ul>
-                  <li><b>Delegates.</b> Wrote and sent multiple email campaigns to market delegates, framed around the creative use of AI.</li>
-                  <li><b>Organizers and vendors.</b> Coordinated with the TIFF: The Market team and the vendors managing the booths to keep every requirement and deadline on track.</li>
-                  <li><b>Booth creative and production.</b> Created the booth wall wraps and banners and managed the print vendor from quotes and proofs through printing and delivery.</li>
-                  <li><b>Sizzle reels and partner showcase.</b> Directed our in-house Content Creator to produce sizzle reels for the booth screen, spotlighting work by nine partners and creators, and secured written permission from partners and creators for footage, names, logos and handles, with one consistent credit standard.</li>
-                  <li><b>Script-to-Screen activation.</b> Invited filmmakers and creators to bring about 30 seconds of a script, scene or concept, which live sessions turned into scenes, trailers, proofs of concept and promotional content.</li>
-                  <li><b>Government.</b> Facilitated a visit by the Minister of Canadian Identity and Culture to our stand.</li>
-                  <li><b>Colleagues and connections.</b> Kept the team informed and engaged before and during market week, and engaged my industry connections and partners around the market.</li>
-                  <li><b>Content.</b> Wrote both TIFF: The Market articles on the company blog, the preview and the highlights recap, and handled social media posting before, during and after the market.</li>
-                  <li><b>At the booth.</b> Spoke with visitors and media, communicated the platform's value propositions to filmmakers, producers and studios, and passed relevant leads to our sales team.</li>
-                  <li><b>Follow-up.</b> Sent post-event follow-up emails to continue the conversations.</li>
-                </ul>
-              </div>
-              <div class="wide case-gallery"><figure><img src="cases/tiff-booth-wall.jpg" loading="lazy" alt="The Moonlite Labs booth at TIFF: The Market, with wall wraps showing the platform's capabilities and a screen reading We Love Our Partners"><figcaption>The booth wall wraps, with partner work on the screen</figcaption></figure><figure><img src="cases/tiff-booth.jpg" loading="lazy" alt="Tanvi Singhal speaking with a visitor at the Moonlite Labs booth at TIFF: The Market"><figcaption>Speaking with a visitor at our stand</figcaption></figure><figure><img src="cases/tiff-minister.jpg" loading="lazy" alt="Minister Marc Miller talking with Founder and CEO Adam Fainman at the Moonlite Labs booth"><figcaption>The Minister of Canadian Identity and Culture with our Founder and CEO</figcaption></figure></div>
-              <div class="wide"><h4>Results</h4>
-                <ul>
-                  <li>Every delegate email campaign opened above 60%, reaching up to 2,689 recipients per send.</li>
-                  <li>Planned as a one-day event, the Script-to-Screen activation ran for several days because of strong demand from filmmakers and creators.</li>
-                  <li>The booth drew media coverage from CBC News and Film Picnic, and the Minister's visit added national visibility during the market.</li>
-                  <li>Our LinkedIn post of the team at the market drew 1,345 clicks, and conversations at the booth led to follow-up meetings and product demonstrations with prospective clients.</li>
-                </ul>
-              </div>
-              <div class="wide role"><h4>My role</h4><p>I led the project from start to finish as Moonlite Labs' marketing, communications and partnerships lead, combining strategy with hands-on work in writing, creative, production, media and vendor management.</p></div>
-              <div class="wide actions" style="margin:0"><a class="pill" href="https://www.cbc.ca/player/play/video/9.7341998" target="_blank" rel="noopener">Watch the CBC News segment ↗</a><a class="pill line" href="https://www.instagram.com/reel/DdZkqHNuVAB/" target="_blank" rel="noopener">Film Picnic reel ↗</a><a class="pill line" href="https://moonlitelabs.com/blog/moonlite-labs-tiff-the-market-2026/" target="_blank" rel="noopener">My preview article ↗</a><a class="pill line" href="https://moonlitelabs.com/blog/tiff-the-market-2026-highlights/" target="_blank" rel="noopener">My highlights article ↗</a></div>
-              <p class="case-src wide">Email open rates as reported by Klaviyo. Event context from <a href="https://www.screendaily.com/news/sales-few-packages-and-badge-lines-attendees-assess-inaugural-tiff-the-market/5220568.article" target="_blank" rel="noopener">Screen Daily ↗</a>.</p>
-            </div>
-          </details>
-        </article>
+<details>
+<summary>Read the full case study</summary>
+<div class="case-body">
 
-        <article class="case" aria-labelledby="c2-h">
-          <div class="case-top">
-            <div class="case-intro">
-              <p class="tags">Moonlite Labs<i>|</i>Social media &amp; content strategy<i>|</i>May – Oct 2026</p>
-              <h3 id="c2-h">Building an organic LinkedIn content program from the ground up</h3>
-              <p class="lead">As Moonlite Labs' first dedicated marketing hire, I built the company's LinkedIn content program and more than tripled its click-through rate in my first five months, with no paid promotion.</p>
-            </div>
-            <div class="case-img type"><span>Weighted click-through rate</span><p class="big">5% → 17%</p><span>Before I joined compared with my first five months</span></div>
-          </div>
-          <div class="kpis">
-            <div class="kpi"><b>3 → 9</b><span>posts per month</span></div>
-            <div class="kpi"><b>19%</b><span>click-through in the latest 90 days</span></div>
-            <div class="kpi"><b>37 → 450</b><span>reactions</span></div>
-            <div class="kpi"><b>About 4x</b><span>impressions per day</span></div>
-          </div>
-          <details>
-            <summary>Read the full case study</summary>
-            <div class="case-body">
-              <div><h4>Challenge</h4><p>When I joined in May 2026, the company page posted about three times a month. Moonlite Labs needed a steady, credible presence to reach filmmakers, studios, brands and partners, and to show what its AI creative platform could do, with organic content only.</p></div>
-              <div><h4>Strategy</h4><p>I set content pillars around product launches, explainers, live event coverage, creator showcases and company news, and made live coverage of the events we attended a central part of the program. I used post-level performance data to decide what to publish more of and shared insights with the Founder and CEO.</p></div>
-              <div class="wide"><h4>Execution</h4>
-                <ul>
-                  <li>Wrote and published every company-page post and managed the content calendar.</li>
-                  <li>Briefed and directed our Content Creator on video and visual content, and reviewed and approved each post.</li>
-                  <li>Covered Web Summit Vancouver, VivaTech Paris, VRTO and TIFF: The Market live from the floor.</li>
-                  <li>Built accessibility into every post with captions, alt text, colour contrast and plain language.</li>
-                  <li>Tracked engagement, reach and click-through rate for each post and adjusted the content mix and posting cadence.</li>
-                </ul>
-              </div>
-              <div class="wide"><h4>Results</h4>
-                <ul>
-                  <li>Weighted click-through rate rose from 5% in the months before I joined to 17% in my first five months, and reached 19% in the latest 90 days.</li>
-                  <li>Reactions grew from 37 to 450 and daily impressions roughly quadrupled, as posting rose from three to nine posts a month.</li>
-                  <li>Live event coverage became the strongest format, with four event posts drawing more than 2,200 clicks.</li>
-                </ul>
-              </div>
-              <div class="wide role"><h4>My role</h4><p>I own the channel end to end, from strategy and writing to publishing, community management and performance analysis.</p></div>
-              <p class="case-src wide">LinkedIn company page analytics, Oct 3, 2025 – Apr 30, 2026 compared with May 1 – Oct 2, 2026. See <a href="#social">featured posts</a>.</p>
-            </div>
-          </details>
-        </article>
 
-        <article class="case" aria-labelledby="c3-h">
-          <div class="case-top">
-            <div class="case-intro">
-              <p class="tags">REC Limited<i>|</i>Public information campaign<i>|</i>Government of India program</p>
-              <h3 id="c3-h">Helping millions of households sign up for electricity</h3>
-              <p class="lead">For India's national household electrification program, I led a large-scale, multi-channel campaign with state power distribution utilities, turning technical and policy information into human-centred stories in 22 languages.</p>
-            </div>
-            <figure class="case-img"><img src="lives/p-02.jpg" loading="lazy" alt="A family in their home under a newly installed electric light, from the book Lighting Lives"></figure>
-          </div>
-          <div class="kpis">
-            <div class="kpi"><b>28.6M</b><span>household opt-ins the campaign contributed to</span></div>
-            <div class="kpi"><b>22</b><span>languages</span></div>
-            <div class="kpi"><b>785,000+</b><span>Facebook audience for the program</span></div>
-            <div class="kpi"><b>51 pages</b><span>impact book, <i>Lighting Lives</i></span></div>
-          </div>
-          <details>
-            <summary>Read the full case study</summary>
-            <div class="case-body">
-              <div><h4>Challenge</h4><p>The Government of India set out to connect every willing household to electricity within a tight timeframe, and REC was the program's nodal agency. Many of these households were in remote areas and had never had a connection. People needed to know the program existed, see that it was meant for them and understand how to sign up, in their own language.</p></div>
-              <div><h4>Strategy</h4><p>I built the campaign on human stories backed by program facts. Beneficiary testimonials showed what electricity changed for families, while plain-language information explained the benefits and the steps to join. Working with state power distribution utilities, we carried one consistent message through local languages and channels.</p></div>
-              <div class="wide"><h4>Execution</h4>
-                <ul>
-                  <li>Led a 22-language integrated campaign across multiple channels, coordinating with state power distribution utilities.</li>
-                  <li>Translated technical and policy information into accessible messaging for citizens with very different levels of familiarity with the program.</li>
-                  <li>Paired beneficiary testimonials with program data to show impact for families and at national scale.</li>
-                  <li>Captured the program's story in <i>Lighting Lives</i>, gathering and analyzing program information, shaping the storytelling, overseeing design and production, and managing approvals for accuracy.</li>
-                </ul>
-              </div>
-              <div class="wide"><h4>Results</h4>
-                <ul>
-                  <li>The campaign contributed to 28.6 million household opt-ins.</li>
-                  <li>The program's Facebook audience grew to more than 785,000.</li>
-                  <li><i>Lighting Lives</i> became a lasting record of the program for stakeholders. <a href="#impact">Read the book</a></li>
-                </ul>
-              </div>
-              <div class="wide role"><h4>My role</h4><p>I led communications and coordination for the campaign. Electrification itself was delivered by power distribution utilities and program partners.</p></div>
-            </div>
-          </details>
-        </article>
 
-        <article class="case" aria-labelledby="c4-h">
-          <div class="case-top">
-            <div class="case-intro">
-              <p class="tags">REC Limited<i>|</i>Internal communications &amp; employee engagement<i>|</i>Since 2018</p>
-              <h3 id="c4-h"><i>Watts Up</i>: an employee magazine by the employees, for the employees</h3>
-              <p class="lead">I conceived and launched <i>Watts Up</i>, REC's first multilingual employee publication, and as lead editor built it around the voices of employees at every level and location. The magazine has won awards, earned appreciation from employees and management, and is still published today.</p>
-            </div>
-            <div class="case-img type"><span>Name</span><p class="big"><i>Watts Up</i></p><span>A play on the unit of power and the everyday greeting “What's up?”</span></div>
-          </div>
-          <div class="kpis">
-            <div class="kpi"><b>Award-winning</b><span>external recognition</span></div>
-            <div class="kpi"><b>Since 2018</b><span>still in publication</span></div>
-            <div class="kpi"><b>1,000+</b><span>employees reached in REC and two subsidiaries</span></div>
-            <div class="kpi"><b>25+</b><span>office locations represented</span></div>
-          </div>
-          <details>
-            <summary>Read the full case study</summary>
-            <div class="case-body">
-              <div><h4>Challenge</h4><p>REC's employees ranged in age from their early twenties to sixty, came from engineering, finance, medicine, the civil service and marketing, and worked in more than 25 locations across India. I saw an opportunity to bring people closer beyond their job titles, help colleagues across generations and functions get to know one another, and give employees in regional offices the same chance to take part as those at the corporate office.</p></div>
-              <div><h4>Strategy</h4><p>I conceived a magazine of the employees, by the employees and for the employees. Contributions were open to everyone, including contract staff, and contributors were published without their designations, so readers met people as colleagues. A mix of sections gave every reader something to enjoy, and a playful tone made the magazine something people chose to pick up.</p></div>
-              <div class="wide"><h4>Execution</h4>
-                <ul>
-                  <li><b>Editorial direction.</b> As lead editor, set the editorial direction and themes for each issue and built a network of employee contributors in different locations and functions.</li>
-                  <li><b>Sections for every interest.</b> Employee profiles in Up Close &amp; Personal, team introductions in Meet the Team, themed employee articles in Focus, travel writing, stories and poems in Chai Break, company and power-sector news, a history timeline, a library corner, a photo gallery of events and an in-house comic strip.</li>
-                  <li><b>Distribution.</b> Published a web version for all locations, and placed printed copies in a distinctive size at reception, notice boards, waiting areas and libraries to spark curiosity.</li>
-                  <li><b>Recognition for contributors.</b> Thanked every contributor with REC merchandise, and opened a classifieds section for employees and departments to share news and initiatives.</li>
-                </ul>
-              </div>
-              <div class="wide"><h4>Results</h4>
-                <ul>
-                  <li>Employee contributions grew issue after issue, a key measure of the magazine's popularity.</li>
-                  <li><i>Watts Up</i> won external awards and earned appreciation from both employees and management.</li>
-                  <li>The magazine remains in publication years after its first edition in February 2018.</li>
-                  <li>It helped create long-term cultural change, giving employees at every level and location a shared space for their work, ideas and lives.</li>
-                </ul>
-              </div>
-              <div class="wide role"><h4>My role</h4><p>I conceived the publication, launched it and led it as editor, from concept, name and section structure to contributor outreach and each issue's content.</p></div>
-            </div>
-          </details>
-        </article>
 
-      </div>
-    </div>
-  </section>
+
+
+
+
+<div class="wide"><h4>Challenge</h4><p>In September 2026, TIFF launched its first industry market, bringing together the filmmakers, producers and studios Moonlite Labs serves. With a small team and a fixed date, the company had to stand out among 238 exhibitors, show film professionals what the platform could do for their own projects, and turn booth conversations into lasting relationships.</p></div><div class="wide role"><h4>My role</h4><p>I led the project from start to finish as Moonlite Labs' marketing, communications and partnerships lead, combining strategy with hands-on work in writing, creative, production, media and vendor management.</p></div><div class="wide"><h4>Strategy</h4><p>I recognized the market's relevance to our target customers, approached the organizers and developed the exhibition and booth activation strategy. I built the plan around participation, inviting delegates to bring their own ideas and watch them become scenes on the spot, and around credibility, with a showcase of work by creators using the platform. Every channel, from email and social media to the booth itself, carried the same message about the creative use of AI.</p></div><div class="wide"><h4>Execution</h4>
+<ul>
+<li><b>Delegates.</b> Wrote and sent multiple email campaigns to market delegates, framed around the creative use of AI.</li>
+<li><b>Organizers and vendors.</b> Coordinated with the TIFF: The Market team and the vendors managing the booths to keep every requirement and deadline on track.</li>
+<li><b>Booth creative and production.</b> Created the booth wall wraps and banners and managed the print vendor from quotes and proofs through printing and delivery.</li>
+<li><b>Sizzle reels and partner showcase.</b> Directed our in-house Content Creator to produce sizzle reels for the booth screen, spotlighting work by nine partners and creators, and secured written permission from partners and creators for footage, names, logos and handles, with one consistent credit standard.</li>
+<li><b>Script-to-Screen activation.</b> Invited filmmakers and creators to bring about 30 seconds of a script, scene or concept, which live sessions turned into scenes, trailers, proofs of concept and promotional content.</li>
+<li><b>Government.</b> Facilitated a visit by the Minister of Canadian Identity and Culture to our stand.</li>
+<li><b>Colleagues and connections.</b> Kept the team informed and engaged before and during market week, and engaged my industry connections and partners around the market.</li>
+<li><b>Content.</b> Wrote both TIFF: The Market articles on the company blog, the preview and the highlights recap, and handled social media posting before, during and after the market.</li>
+<li><b>At the booth.</b> Spoke with visitors and media, communicated the platform's value propositions to filmmakers, producers and studios, and passed relevant leads to our sales team.</li>
+<li><b>Follow-up.</b> Sent post-event follow-up emails to continue the conversations.</li>
+</ul>
+</div><div class="wide case-gallery"><figure><img alt="The Moonlite Labs booth at TIFF: The Market, with wall wraps showing the platform's capabilities and a screen reading We Love Our Partners" loading="lazy" src="cases/tiff-booth-wall.jpg"/><figcaption>The booth wall wraps, with partner work on the screen</figcaption></figure><figure><img alt="Tanvi Singhal speaking with a visitor at the Moonlite Labs booth at TIFF: The Market" loading="lazy" src="cases/tiff-booth.jpg"/><figcaption>Speaking with a visitor at our stand</figcaption></figure><figure><img alt="Minister Marc Miller talking with Founder and CEO Adam Fainman at the Moonlite Labs booth" loading="lazy" src="cases/tiff-minister.jpg"/><figcaption>The Minister of Canadian Identity and Culture with our Founder and CEO</figcaption></figure></div><div class="wide"><h4>Outcomes</h4><div class="kpis">
+<div class="kpi"><b>60%+</b><span>open rates on delegate email campaigns</span></div>
+<div class="kpi"><b>1 day → several</b><span>activation extended because of strong demand</span></div>
+<div class="kpi"><b>CBC News</b><span>coverage featuring our Founder and CEO</span></div>
+<div class="kpi"><b>Minister visit</b><span>Canadian Identity and Culture, at our stand</span></div>
+</div>
+<ul>
+<li>Every delegate email campaign opened above 60%, reaching up to 2,689 recipients per send.</li>
+<li>Planned as a one-day event, the Script-to-Screen activation ran for several days because of strong demand from filmmakers and creators.</li>
+<li>The booth drew media coverage from CBC News and Film Picnic, and the Minister's visit added national visibility during the market.</li>
+<li>Our LinkedIn post of the team at the market drew 1,345 clicks, and conversations at the booth led to follow-up meetings and product demonstrations with prospective clients.</li>
+</ul>
+</div><div class="wide actions" style="margin:0"><a class="pill" href="https://www.cbc.ca/player/play/video/9.7341998" rel="noopener" target="_blank">Watch the CBC News segment ↗</a><a class="pill line" href="https://www.instagram.com/reel/DdZkqHNuVAB/" rel="noopener" target="_blank">Film Picnic reel ↗</a><a class="pill line" href="https://moonlitelabs.com/blog/moonlite-labs-tiff-the-market-2026/" rel="noopener" target="_blank">My preview article ↗</a><a class="pill line" href="https://moonlitelabs.com/blog/tiff-the-market-2026-highlights/" rel="noopener" target="_blank">My highlights article ↗</a></div><button class="case-close wide" type="button">Close case study ↑</button></div>
+</details>
+</article>
+<article aria-labelledby="c2-h" class="case">
+<div class="case-top">
+<div class="case-intro">
+<p class="tags">Moonlite Labs<i>|</i>Social media &amp; content strategy<i>|</i>May – Oct 2026</p>
+<h3 id="c2-h">Building an organic LinkedIn content program from the ground up</h3>
+<p class="lead">As Moonlite Labs' first dedicated marketing hire, I built the company's LinkedIn content program and more than tripled its click-through rate in my first five months, with no paid promotion.</p>
+</div>
+<div class="case-img type"><span>Weighted click-through rate</span><p class="big">5% → 17%</p><span>Before I joined compared with my first five months</span></div>
+</div>
+
+<details>
+<summary>Read the full case study</summary>
+<div class="case-body">
+
+
+
+
+
+
+<div class="wide"><h4>Challenge</h4><p>When I joined in May 2026, the company page posted about three times a month. Moonlite Labs needed a steady, credible presence to reach filmmakers, studios, brands and partners, and to show what its AI creative platform could do, with organic content only.</p></div><div class="wide role"><h4>My role</h4><p>I own the channel end to end, from strategy and writing to publishing, community management and performance analysis.</p></div><div class="wide"><h4>Strategy</h4><p>I set content pillars around product launches, explainers, live event coverage, creator showcases and company news, and made live coverage of the events we attended a central part of the program. I used post-level performance data to decide what to publish more of and shared insights with the Founder and CEO.</p></div><div class="wide"><h4>Execution</h4>
+<ul>
+<li>Wrote and published every company-page post and managed the content calendar.</li>
+<li>Briefed and directed our Content Creator on video and visual content, and reviewed and approved each post.</li>
+<li>Covered Web Summit Vancouver, VivaTech Paris, VRTO and TIFF: The Market live from the floor.</li>
+<li>Built accessibility into every post with captions, alt text, colour contrast and plain language.</li>
+<li>Tracked engagement, reach and click-through rate for each post and adjusted the content mix and posting cadence.</li>
+</ul>
+</div><div class="wide"><h4>Outcomes</h4><div class="kpis">
+<div class="kpi"><b>3 → 9</b><span>posts per month</span></div>
+<div class="kpi"><b>19%</b><span>click-through in the latest 90 days</span></div>
+<div class="kpi"><b>37 → 450</b><span>reactions</span></div>
+<div class="kpi"><b>About 4x</b><span>impressions per day</span></div>
+</div>
+<ul>
+<li>Weighted click-through rate rose from 5% in the months before I joined to 17% in my first five months, and reached 19% in the latest 90 days.</li>
+<li>Reactions grew from 37 to 450 and daily impressions roughly quadrupled, as posting rose from three to nine posts a month.</li>
+<li>Live event coverage became the strongest format, with four event posts drawing more than 2,200 clicks.</li>
+</ul>
+</div><p class="case-src wide">LinkedIn company page analytics, Oct 3, 2025 – Apr 30, 2026 compared with May 1 – Oct 2, 2026. See <a href="#social">featured posts</a>.</p><button class="case-close wide" type="button">Close case study ↑</button></div>
+</details>
+</article>
+<article aria-labelledby="c3-h" class="case">
+<div class="case-top">
+<div class="case-intro">
+<p class="tags">REC Limited<i>|</i>Public information campaign<i>|</i>Government of India program</p>
+<h3 id="c3-h">Helping millions of households sign up for electricity</h3>
+<p class="lead">For India's national household electrification program, I led a large-scale, multi-channel campaign with state power distribution utilities, turning technical and policy information into human-centred stories in 22 languages.</p>
+</div>
+<figure class="case-img"><img alt="A family in their home under a newly installed electric light, from the book Lighting Lives" loading="lazy" src="lives/p-02.jpg"/></figure>
+</div>
+
+<details>
+<summary>Read the full case study</summary>
+<div class="case-body">
+
+
+
+
+
+<div class="wide"><h4>Challenge</h4><p>The Government of India set out to connect every willing household to electricity within a tight timeframe, and REC was the program's nodal agency. Many of these households were in remote areas and had never had a connection. People needed to know the program existed, see that it was meant for them and understand how to sign up, in their own language.</p></div><div class="wide role"><h4>My role</h4><p>I led communications and coordination for the campaign. Electrification itself was delivered by power distribution utilities and program partners.</p></div><div class="wide"><h4>Strategy</h4><p>I built the campaign on human stories backed by program facts. Beneficiary testimonials showed what electricity changed for families, while plain-language information explained the benefits and the steps to join. Working with state power distribution utilities, we carried one consistent message through local languages and channels.</p></div><div class="wide"><h4>Execution</h4>
+<ul>
+<li>Led a 22-language integrated campaign across multiple channels, coordinating with state power distribution utilities.</li>
+<li>Translated technical and policy information into accessible messaging for citizens with very different levels of familiarity with the program.</li>
+<li>Paired beneficiary testimonials with program data to show impact for families and at national scale.</li>
+<li>Captured the program's story in <i>Lighting Lives</i>, gathering and analyzing program information, shaping the storytelling, overseeing design and production, and managing approvals for accuracy.</li>
+</ul>
+</div><div class="wide"><h4>Outcomes</h4><div class="kpis">
+<div class="kpi"><b>28.6M</b><span>household opt-ins the campaign contributed to</span></div>
+<div class="kpi"><b>22</b><span>languages</span></div>
+<div class="kpi"><b>785,000+</b><span>Facebook audience for the program</span></div>
+<div class="kpi"><b>51 pages</b><span>impact book, <i>Lighting Lives</i></span></div>
+</div>
+<ul>
+<li>The campaign contributed to 28.6 million household opt-ins.</li>
+<li>The program's Facebook audience grew to more than 785,000.</li>
+<li><i>Lighting Lives</i> became a lasting record of the program for stakeholders. <a href="#impact">Read the book</a></li>
+</ul>
+</div><button class="case-close wide" type="button">Close case study ↑</button></div>
+</details>
+</article>
+<article aria-labelledby="c4-h" class="case">
+<div class="case-top">
+<div class="case-intro">
+<p class="tags">REC Limited<i>|</i>Internal communications &amp; employee engagement<i>|</i>Since 2018</p>
+<h3 id="c4-h"><i>Watts Up</i>: an employee magazine by the employees, for the employees</h3>
+<p class="lead">I conceived and launched <i>Watts Up</i>, REC's first multilingual employee publication, and as lead editor built it around the voices of employees at every level and location. The magazine has won awards, earned appreciation from employees and management, and is still published today.</p>
+</div>
+<div class="case-img type"><span>Name</span><p class="big"><i>Watts Up</i></p><span>A play on the unit of power and the everyday greeting “What's up?”</span></div>
+</div>
+
+<details>
+<summary>Read the full case study</summary>
+<div class="case-body">
+
+
+
+
+
+<div class="wide"><h4>Challenge</h4><p>REC's employees ranged in age from their early twenties to sixty, came from engineering, finance, medicine, the civil service and marketing, and worked in more than 25 locations across India. I saw an opportunity to bring people closer beyond their job titles, help colleagues across generations and functions get to know one another, and give employees in regional offices the same chance to take part as those at the corporate office.</p></div><div class="wide role"><h4>My role</h4><p>I conceived the publication, launched it and led it as editor, from concept, name and section structure to contributor outreach and each issue's content.</p></div><div class="wide"><h4>Strategy</h4><p>I conceived a magazine of the employees, by the employees and for the employees. Contributions were open to everyone, including contract staff, and contributors were published without their designations, so readers met people as colleagues. A mix of sections gave every reader something to enjoy, and a playful tone made the magazine something people chose to pick up.</p></div><div class="wide"><h4>Execution</h4>
+<ul>
+<li><b>Editorial direction.</b> As lead editor, set the editorial direction and themes for each issue and built a network of employee contributors in different locations and functions.</li>
+<li><b>Sections for every interest.</b> Employee profiles in Up Close &amp; Personal, team introductions in Meet the Team, themed employee articles in Focus, travel writing, stories and poems in Chai Break, company and power-sector news, a history timeline, a library corner, a photo gallery of events and an in-house comic strip.</li>
+<li><b>Distribution.</b> Published a web version for all locations, and placed printed copies in a distinctive size at reception, notice boards, waiting areas and libraries to spark curiosity.</li>
+<li><b>Recognition for contributors.</b> Thanked every contributor with REC merchandise, and opened a classifieds section for employees and departments to share news and initiatives.</li>
+</ul>
+</div><div class="wide"><h4>Outcomes</h4><div class="kpis">
+<div class="kpi"><b>Award-winning</b><span>external recognition</span></div>
+<div class="kpi"><b>Since 2018</b><span>still in publication</span></div>
+<div class="kpi"><b>1,000+</b><span>employees reached in REC and two subsidiaries</span></div>
+<div class="kpi"><b>25+</b><span>office locations represented</span></div>
+</div>
+<ul>
+<li>Employee contributions grew issue after issue, a key measure of the magazine's popularity.</li>
+<li><i>Watts Up</i> won external awards and earned appreciation from both employees and management.</li>
+<li>The magazine remains in publication years after its first edition in February 2018.</li>
+<li>It helped create long-term cultural change, giving employees at every level and location a shared space for their work, ideas and lives.</li>
+</ul>
+</div><button class="case-close wide" type="button">Close case study ↑</button></div>
+</details>
+</article>
+</div>
+</div>
+</section>
 
   <section id="expertise" aria-labelledby="caps-h" style="padding-top:1rem">
     <div class="in">
@@ -1062,6 +1063,7 @@ document.getElementById('copy').addEventListener('click', function () {
 (function () {
   function openCase() { var h = location.hash; if (!h || h.length < 2) return; var el = document.getElementById(h.slice(1)); if (!el) return; var c = el.closest('.case'); if (c) { var d = c.querySelector('details'); if (d) d.open = true; } }
   window.addEventListener('hashchange', openCase); openCase();
+  document.querySelectorAll('.case-close').forEach(function (b) { b.addEventListener('click', function () { var c = b.closest('.case'); c.querySelector('details').open = false; c.scrollIntoView({ block: 'start' }); }); });
 })();
 
 (function () {

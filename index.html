@@ -307,8 +307,8 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
 .case-intro { padding: clamp(1.5rem, 3.5vw, 2.5rem); display: grid; gap: 1rem; align-content: start; min-width: 0; }
 .case-intro h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.15; }
 .case-intro .lead { color: var(--muted); font-size: 1.05rem; }
-.case-img { margin: 0; min-height: 100%; background: var(--sand); }
-.case-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.case-img { margin: 0; position: relative; min-height: 16rem; background: var(--sand); }
+.case-img img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
 .case-img.type { display: grid; align-content: end; gap: 0.6rem; padding: clamp(1.5rem, 3.5vw, 2.5rem); background: var(--navy); color: var(--on-dark); }
 .case-img.type .big { font-size: clamp(2.6rem, 6vw, 4.2rem); font-weight: 500; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
 .case-img.type span { opacity: 0.8; }
@@ -447,7 +447,7 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
         <div class="gcard"><h3>Executive communications &amp; thought leadership</h3><p>A Chairman's message to shareholders, founder speaker materials and published thought leadership under my own byline.</p>
           <div class="glinks"><a href="#leadership">Executive samples</a><a href="#rec-social">Leadership video series</a><a href="#press">Results release</a></div></div>
         <div class="gcard"><h3>Internal &amp; employee communications</h3><p>Employee publications, leadership video content, change communications and engagement for a workforce in 25 regional offices.</p>
-          <div class="glinks"><a href="#internal">Internal communications</a><a href="#rec-social">Leadership video series</a></div></div>
+          <div class="glinks"><a href="#c4-h"><i>Watts Up</i> case study</a><a href="#internal">Internal communications</a><a href="#rec-social">Leadership video series</a></div></div>
         <div class="gcard"><h3>Marketing, brand &amp; campaigns</h3><p>Brand film, print advertising, consumer campaigns, a website relaunch, trade shows and sales-focused landing pages.</p>
           <div class="glinks"><a href="#c1-h">TIFF case study</a><a href="#campaigns">Advertising &amp; brand film</a><a href="#web">Website &amp; blog</a><a href="#events">Trade shows &amp; events</a></div></div>
         <div class="gcard"><h3>Social media &amp; digital</h3><p>Organic social strategy and results, featured posts, community management, executive video series and festival marketing.</p>
@@ -458,7 +458,7 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
 
   <section id="cases" aria-labelledby="cases-h" style="background:var(--sand)">
     <div class="in">
-      <div class="head"><p class="label">Case studies</p><h2 id="cases-h">Selected case studies</h2><p>Three projects told from challenge to result, showing the strategy behind the work and what I did hands-on.</p></div>
+      <div class="head"><p class="label">Case studies</p><h2 id="cases-h">Selected case studies</h2><p>Four projects told from challenge to result, showing the strategy behind the work and what I did hands-on.</p></div>
       <div class="cases">
 
         <article class="case" aria-labelledby="c1-h">
@@ -589,6 +589,47 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
           </details>
         </article>
 
+        <article class="case" aria-labelledby="c4-h">
+          <div class="case-top">
+            <div class="case-intro">
+              <p class="tags">REC Limited<i>|</i>Internal communications &amp; employee engagement<i>|</i>Since 2018</p>
+              <h3 id="c4-h"><i>Watts Up</i>: an employee magazine by the employees, for the employees</h3>
+              <p class="lead">I conceived and launched <i>Watts Up</i>, REC's first multilingual employee publication, and as lead editor built it around the voices of employees at every level and location. The magazine has won awards, earned appreciation from employees and management, and is still published today.</p>
+            </div>
+            <div class="case-img type"><span>Name</span><p class="big"><i>Watts Up</i></p><span>A play on the unit of power and the everyday greeting “What's up?”</span></div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>Award-winning</b><span>external recognition</span></div>
+            <div class="kpi"><b>Since 2018</b><span>still in publication</span></div>
+            <div class="kpi"><b>1,000+</b><span>employees reached in REC and two subsidiaries</span></div>
+            <div class="kpi"><b>25+</b><span>office locations represented</span></div>
+          </div>
+          <details>
+            <summary>Read the full case study</summary>
+            <div class="case-body">
+              <div><h4>Challenge</h4><p>REC's employees ranged in age from their early twenties to sixty, came from engineering, finance, medicine, the civil service and marketing, and worked in more than 25 locations across India. I saw an opportunity to bring people closer beyond their job titles, help colleagues across generations and functions get to know one another, and give employees in regional offices the same chance to take part as those at the corporate office.</p></div>
+              <div><h4>Strategy</h4><p>I conceived a magazine of the employees, by the employees and for the employees. Contributions were open to everyone, including contract staff, and contributors were published without their designations, so readers met people as colleagues. A mix of sections gave every reader something to enjoy, and a playful tone made the magazine something people chose to pick up.</p></div>
+              <div class="wide"><h4>Execution</h4>
+                <ul>
+                  <li><b>Editorial direction.</b> As lead editor, set the editorial direction and themes for each issue and built a network of employee contributors in different locations and functions.</li>
+                  <li><b>Sections for every interest.</b> Employee profiles in Up Close &amp; Personal, team introductions in Meet the Team, themed employee articles in Focus, travel writing, stories and poems in Chai Break, company and power-sector news, a history timeline, a library corner, a photo gallery of events and an in-house comic strip.</li>
+                  <li><b>Distribution.</b> Published a web version for all locations, and placed printed copies in a distinctive size at reception, notice boards, waiting areas and libraries to spark curiosity.</li>
+                  <li><b>Recognition for contributors.</b> Thanked every contributor with REC merchandise, and opened a classifieds section for employees and departments to share news and initiatives.</li>
+                </ul>
+              </div>
+              <div class="wide"><h4>Results</h4>
+                <ul>
+                  <li>Employee contributions grew issue after issue, a key measure of the magazine's popularity.</li>
+                  <li><i>Watts Up</i> won external awards and earned appreciation from both employees and management.</li>
+                  <li>The magazine remains in publication years after its first edition in February 2018.</li>
+                  <li>It helped create long-term cultural change, giving employees at every level and location a shared space for their work, ideas and lives.</li>
+                </ul>
+              </div>
+              <div class="wide role"><h4>My role</h4><p>I conceived the publication, launched it and led it as editor, from concept, name and section structure to contributor outreach and each issue's content.</p></div>
+            </div>
+          </details>
+        </article>
+
       </div>
     </div>
   </section>
@@ -713,7 +754,7 @@ button.item:hover h3 { text-decoration: underline; text-underline-offset: 4px; t
     <div class="in">
       <div class="head"><p class="label">REC Limited</p><h2 id="internal-h">Internal &amp; employee communications</h2><p>I led integrated internal communications for a geographically dispersed workforce in 25 regional branch offices, working with HR, department heads and senior leaders through intranet posts, newsletters, executive messaging, town halls, leadership forums, digital campaigns and employee events.</p></div>
       <ul class="howlist">
-        <li><h3>Employee publication</h3><p>I conceived and launched <i>Watts Up</i>, REC's first multilingual employee publication, and as lead editor built a network of employee contributors in different locations and functions. The publication earned external recognition.</p></li>
+        <li><h3>Employee publication</h3><p>I conceived and launched <i>Watts Up</i>, REC's first multilingual employee publication, and as lead editor built a network of employee contributors in different locations and functions. The publication earned external recognition. <a class="rec-link" href="#c4-h">Read the case study</a></p></li>
         <li><h3>Leadership video series</h3><p>I created <i>LeaderSpeak</i>, a video series featuring senior executives and department heads, to make organizational priorities and achievements more accessible to employees. <a class="rec-link" href="#rec-social">See examples</a></p></li>
         <li><h3>Change communications</h3><p>I led COVID-19 communications on safety, wellness and vaccination, using virtual engagement and expert-led sessions to sustain morale and business continuity, contributing to 100% employee vaccination. I also led brand and change communications for a subsidiary merger and REC's corporate renaming.</p></li>
         <li><h3>Employee engagement</h3><p>I organized Foundation Day celebrations, leadership forums, workshops, quizzes on company policies and causes, a World Environment Day painting competition for employees' children and blood donation camps, working with HR and regional offices.</p></li>

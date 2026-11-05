@@ -4,6 +4,27 @@
 (function () {
   'use strict';
 
+  /* Mobile menu */
+  var menuBtn = document.getElementById('menu-btn');
+  var siteNav = document.getElementById('site-nav');
+  if (menuBtn && siteNav) {
+    var setMenu = function (open) {
+      siteNav.classList.toggle('open', open);
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    };
+    menuBtn.addEventListener('click', function () { setMenu(!siteNav.classList.contains('open')); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && siteNav.classList.contains('open')) { setMenu(false); menuBtn.focus(); }
+    });
+    document.addEventListener('click', function (e) {
+      if (!siteNav.contains(e.target) && !menuBtn.contains(e.target)) { setMenu(false); }
+    });
+    siteNav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { setMenu(false); }
+    });
+  }
+
   /* Light and dark mode. Light is the default; the head script applies a saved choice before the page paints. */
   var themeBtn = document.getElementById('theme');
   if (themeBtn) {

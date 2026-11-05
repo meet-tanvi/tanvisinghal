@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/site.css">
-  <script>try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+  <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -17,11 +17,11 @@
   <header class="site-head">
     <div class="wrap">
       <a class="brand" href="index.html">Tanvi Singhal</a>
-      <nav class="site-nav" aria-label="Main">
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
         <a href="work.html">Work</a>
         <a href="case-studies.html" aria-current="page">Case studies</a>
         <a href="experience.html">Experience</a>
-        <a href="about.html">About</a>
         <a href="recognition.html">Recognition</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -69,7 +69,8 @@
 <li>The booth drew media coverage from CBC News and Film Picnic, and the Minister's visit added national visibility during the market.</li>
 <li>Our LinkedIn post of the team at the market drew 1,345 clicks, and conversations at the booth led to follow-up meetings and product demonstrations with prospective clients.</li>
 </ul>
-</div><div class="btnrow cs-links"><a class="btn" href="https://www.cbc.ca/player/play/video/9.7341998" rel="noopener" target="_blank">Watch the CBC News segment ↗</a><a class="btn ghost" href="https://www.instagram.com/reel/DdZkqHNuVAB/" rel="noopener" target="_blank">Film Picnic reel ↗</a><a class="btn ghost" href="https://moonlitelabs.com/blog/moonlite-labs-tiff-the-market-2026/" rel="noopener" target="_blank">My preview article ↗</a><a class="btn ghost" href="https://moonlitelabs.com/blog/tiff-the-market-2026-highlights/" rel="noopener" target="_blank">My highlights article ↗</a></div>
+</div><div class="cs"><h2>What I enjoyed</h2><p>I enjoyed coming up with creative ideas to make the most of this opportunity for the company. I also enjoyed learning what our ideal customers, filmmakers and producers, want and the questions they ask. Those conversations informed my later strategic decisions, such as making the answers easy to find on our website and making it easy to book meetings with our sales team. Above all, I loved the sales enablement side of this work and seeing my work turn into high-quality leads in real time.</p></div>
+<div class="btnrow cs-links"><a class="btn" href="https://www.cbc.ca/player/play/video/9.7341998" rel="noopener" target="_blank">Watch the CBC News segment ↗</a><a class="btn ghost" href="https://www.instagram.com/reel/DdZkqHNuVAB/" rel="noopener" target="_blank">Film Picnic reel ↗</a><a class="btn ghost" href="https://moonlitelabs.com/blog/moonlite-labs-tiff-the-market-2026/" rel="noopener" target="_blank">My preview article ↗</a><a class="btn ghost" href="https://moonlitelabs.com/blog/tiff-the-market-2026-highlights/" rel="noopener" target="_blank">My highlights article ↗</a></div>
       </div>
       <nav class="pager" aria-label="More case studies">
         <a href="case-rec-50.html"><small>Previous</small>REC 50th anniversary book</a>

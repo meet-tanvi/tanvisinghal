@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/site.css">
-  <script>try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+  <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -17,11 +17,11 @@
   <header class="site-head">
     <div class="wrap">
       <a class="brand" href="index.html">Tanvi Singhal</a>
-      <nav class="site-nav" aria-label="Main">
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
         <a href="work.html">Work</a>
         <a href="case-studies.html" aria-current="page">Case studies</a>
         <a href="experience.html">Experience</a>
-        <a href="about.html">About</a>
         <a href="recognition.html">Recognition</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -49,7 +49,7 @@
 <div class="kpi"><b>About 4x</b><span>impressions per day</span></div>
 </div>
       <div class="cs-body">
-<div class="cs"><h2>Challenge</h2><p>When I joined in May 2026, the company page posted about three times a month. Moonlite Labs needed a steady, credible presence to reach filmmakers, studios, brands and partners, and to show what its AI creative platform could do, with organic content only.</p></div><div class="cs-role"><h2>My role</h2><p>I own the channel end to end, from strategy and writing to publishing, community management and performance analysis.</p></div><div class="cs"><h2>Strategy</h2><p>I set content pillars around product launches, explainers, live event coverage, creator showcases and company news, and made live coverage of the events we attended a central part of the program. I used post-level performance data to decide what to publish more of and shared insights with the Founder and CEO.</p></div><div class="cs"><h2>Execution</h2>
+<div class="cs"><h2>Challenge</h2><p>When I joined in May 2026, the company page posted about three times a month. I wanted to keep all company assets updated and running, so I started posting about the company's initiatives. Moonlite Labs needed a steady, credible presence to reach filmmakers, studios, brands and partners, and to show what its AI creative platform could do, with organic content only.</p></div><div class="cs-role"><h2>My role</h2><p>I own the channel end to end, from strategy and writing to publishing, community management and performance analysis.</p></div><div class="cs"><h2>Strategy</h2><p>I set content pillars around product launches, explainers, live event coverage, creator showcases and company news, and made live coverage of the events we attended a central part of the program. I used post-level performance data to decide what to publish more of and shared insights with the Founder and CEO.</p></div><div class="cs"><h2>Execution</h2>
 <ul>
 <li>Wrote and published every company-page post and managed the content calendar.</li>
 <li>Briefed and directed our Content Creator on video and visual content, and reviewed and approved each post.</li>
@@ -64,6 +64,7 @@
 <li>Live event coverage became the strongest format, with four event posts drawing more than 2,200 clicks.</li>
 </ul>
 </div><p class="footnote">LinkedIn company page analytics, Oct 3, 2025 – Apr 30, 2026 compared with May 1 – Oct 2, 2026. See <a class="textlink" href="work-digital.html">featured posts</a>.</p>
+<div class="cs"><h2>What I enjoyed</h2><p>I enjoy seeing engagement, users' reactions and comments, and reading the analytics. They show me what is working and what is not, and give me direction for my marketing and brand strategy.</p></div>
       </div>
       <nav class="pager" aria-label="More case studies">
         <a href="case-tiff.html"><small>Previous</small>TIFF: The Market</a>

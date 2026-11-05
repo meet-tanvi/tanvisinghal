@@ -10,7 +10,7 @@ Double-click `index.html`. It opens in your browser. Fonts load from Google Font
 
 | Page | File |
 | --- | --- |
-| Home | `index.html` |
+| Home (introduction, about, expertise, education) | `index.html` |
 | Work overview | `work.html` |
 | Corporate and strategic communications | `work-corporate.html` |
 | Foundation, CSR and community impact | `work-impact.html` |
@@ -25,7 +25,6 @@ Double-click `index.html`. It opens in your browser. Fonts load from Google Font
 | *Watts Up* | `case-watts-up.html` |
 | REC 50th anniversary book | `case-rec-50.html` |
 | Experience | `experience.html` |
-| About (expertise, education) | `about.html` |
 | Recognition | `recognition.html` |
 | Contact | `contact.html` |
 
@@ -38,5 +37,5 @@ The site opens in light mode. The switch in the header changes it to dark mode, 
 - Text lives in the HTML file for each page.
 - Colours and spacing live at the top of `css/site.css`.
 - The document reader's list of publications is in `js/site.js`.
-- The header and footer are repeated in every page, so a change to the menu has to be made in all 18 files.
+- The header and footer are repeated in every page, so a change to the menu has to be made in all 17 files.
 

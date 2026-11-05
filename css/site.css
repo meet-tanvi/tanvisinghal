@@ -353,3 +353,9 @@ dialog.reader::backdrop { background: transparent; }
 @media print {
   .site-head, .side { display: none; }
 }
+
+/* Writing page */
+.writing h2.sub { margin-top: 3.5rem; padding-top: 1rem; font-size: clamp(1.5rem, 2.4vw, 1.9rem); }
+.writing h2.sub:first-child { margin-top: 0; }
+.writing .sub-lede { margin-top: 0.5rem; max-width: 46rem; }
+.writing .sub-lede + .cards { margin-top: 1.75rem; }

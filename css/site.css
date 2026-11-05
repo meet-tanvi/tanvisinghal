@@ -418,6 +418,9 @@ dialog.reader::backdrop { background: transparent; }
 .fx-stage div { padding: 1rem 1.1rem; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
 .fx-stage small { display: block; color: var(--accent); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
 .fx-stage b { display: block; margin-top: 0.3rem; font-weight: 600; line-height: 1.4; }
+.fx-stage div:not(.on) { background: transparent; border-style: dashed; }
+.fx-stage div:not(.on) small, .fx-stage div:not(.on) b { color: var(--soft); }
+.fx-stage .on { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
 
 .fx-spot { margin-inline: 0; padding-inline: clamp(1.25rem, 3vw, 2.25rem); background: var(--band); color: var(--on-band); border-radius: 14px; border-top: 0; margin-block: 1rem; }
 .fx-spot .fx-feature-label::before { background: var(--warm); }

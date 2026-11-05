@@ -465,6 +465,7 @@ dialog.reader::backdrop { background: transparent; }
 .fx-links a:hover { border-color: var(--accent); }
 .fx-links a:hover i { transform: translate(2px, -2px); }
 .fx .pager { margin-top: 1rem; }
+.fx-split.fx-first { border-top: 0; padding-top: 4rem; }
 .fx-dark + .wrap .fx-split:first-child { border-top: 0; }
 
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }

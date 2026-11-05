@@ -374,7 +374,7 @@ dialog.reader::backdrop { background: transparent; }
 .fx-chips li { padding: 0.35rem 0.8rem; border: 1px solid rgba(243,245,246,0.35); border-radius: 999px; font-size: 0.8125rem; font-weight: 500; background: rgba(12,18,24,0.35); backdrop-filter: blur(4px); }
 
 .fx-band { background: var(--band); color: var(--on-band); border-top: 1px solid rgba(255,255,255,0.08); }
-.fx-band ul { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding-block: 0; }
+.fx-band ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-block: 0; }
 .fx-band li { padding: 1.6rem 1.25rem 1.7rem; border-left: 1px solid rgba(255,255,255,0.12); }
 .fx-band li:first-child { border-left: 0; padding-left: 0; }
 .fx-band b { display: block; font-family: var(--serif); font-size: clamp(2rem, 3.6vw, 2.9rem); font-weight: 500; line-height: 1; color: var(--warm); }
@@ -398,14 +398,13 @@ dialog.reader::backdrop { background: transparent; }
 .fx-flow { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; counter-reset: flow; }
 .fx-flow li { display: flex; align-items: center; counter-increment: flow; }
 .fx-flow li span { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 0.875rem; font-weight: 500; white-space: nowrap; }
-.fx-flow li span::before { content: counter(flow, decimal-leading-zero); color: var(--accent); font-family: var(--serif); font-size: 0.8rem; }
 
 .fx-tint { background: var(--tint); padding-block: 4.5rem; }
 .fx-head { margin-bottom: 2.25rem; max-width: 46rem; }
 .fx-sub { margin-top: 0.75rem; color: var(--muted); }
 .fx-feature { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 1rem clamp(2rem, 5vw, 4.5rem); padding: 2.25rem 0; border-top: 1px solid var(--line); }
 .fx-feature-label { font-family: var(--serif); font-size: 1.35rem; line-height: 1.25; font-weight: 500; }
-.fx-feature-label span { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; margin-bottom: 0.9rem; border-radius: 50%; background: var(--ink); color: var(--paper); font-family: var(--sans); font-size: 0.95rem; font-weight: 600; }
+.fx-feature-label::before { content: ""; display: block; width: 2.25rem; height: 3px; margin-bottom: 1rem; border-radius: 2px; background: var(--accent); }
 .fx-feature-body { max-width: 44rem; display: grid; gap: 1rem; }
 .fx-feature-body > p { color: var(--muted); }
 .fx-stage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
@@ -414,7 +413,7 @@ dialog.reader::backdrop { background: transparent; }
 .fx-stage b { display: block; margin-top: 0.3rem; font-weight: 600; line-height: 1.4; }
 
 .fx-spot { margin-inline: calc(-1 * clamp(1rem, 3vw, 2.25rem)); padding-inline: clamp(1rem, 3vw, 2.25rem); background: var(--band); color: var(--on-band); border-radius: 14px; border-top: 0; margin-block: 1rem; }
-.fx-spot .fx-feature-label span { background: var(--warm); color: #13293d; }
+.fx-spot .fx-feature-label::before { background: var(--warm); }
 .fx-spot .fx-feature-body > p { color: var(--on-band-muted); }
 .fx-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; list-style: none; counter-reset: st; }
 .fx-steps li { position: relative; counter-increment: st; padding: 1rem 1.05rem 1.1rem; border-radius: var(--radius); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); }
@@ -467,9 +466,6 @@ dialog.reader::backdrop { background: transparent; }
 @media print { .js .reveal { opacity: 1; transform: none; } }
 
 @media (max-width: 900px) {
-  .fx-band ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .fx-band li:nth-child(3) { border-left: 0; padding-left: 0; }
-  .fx-band li:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,0.12); }
   .fx-split, .fx-feature { grid-template-columns: 1fr; }
   .fx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fx-card, .fx-card:nth-child(4) { grid-column: span 1; }
@@ -479,17 +475,34 @@ dialog.reader::backdrop { background: transparent; }
   .fx-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 620px) {
-  .fx-hero { min-height: 34rem; }
-  .fx-hero-inner { padding-block: 5rem 2rem; }
-  .fx-band li { padding: 1.2rem 0.75rem 1.3rem; }
-  .fx-band li:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .fx-hero { display: block; min-height: 0; }
+  .fx-hero-img { position: static; height: auto; aspect-ratio: 4 / 3; object-position: center 35%; }
+  .fx-hero::before { display: none; }
+  .fx-hero-inner { padding-block: 1.5rem 1.75rem; }
+  .fx-hero .crumb { font-size: 0.8125rem; }
+  .fx-kicker { font-size: 0.75rem; letter-spacing: 0.06em; line-height: 1.5; }
+  .fx-hero h1 { font-size: clamp(1.9rem, 8.6vw, 2.4rem); line-height: 1.12; max-width: none; }
+  .fx-chips { gap: 0.15rem 0; margin-top: 1rem; }
+  .fx-chips li { padding: 0; border: 0; border-radius: 0; background: none; backdrop-filter: none; color: #c3ccd3; font-size: 0.8125rem; }
+  .fx-chips li:not(:last-child)::after { content: "\00B7"; margin-inline: 0.45rem; color: var(--warm); }
+  .fx-band ul { grid-template-columns: 1fr; }
+  .fx-band li, .fx-band li:first-child { display: grid; grid-template-columns: 5.25rem minmax(0, 1fr); align-items: center; gap: 0.75rem; padding: 1rem 0; border-left: 0; }
+  .fx-band li + li { border-top: 1px solid rgba(255,255,255,0.12); }
+  .fx-band b { font-size: 2rem; }
+  .fx-band span { margin-top: 0; }
+  .fx-lead { font-size: 1.2rem; line-height: 1.5; }
+  .fx h2 { font-size: 1.7rem; }
+  .fx-tint, .fx-dark { padding-block: 3rem; }
+  .fx-feature { padding-block: 1.75rem; }
+  .fx-feature-label { font-size: 1.25rem; }
+  .fx-spot { margin-inline: -1rem; padding-inline: 1rem; border-radius: 0; }
+  .fx-flow li span { padding: 0.4rem 0.75rem; font-size: 0.8125rem; }
+  .fx-out-hero b { font-size: 4.5rem; }
+  .fx-quote { font-size: 1.35rem; }
   .fx-twin, .fx-stage, .fx-steps, .fx-grid, .fx-out, .fx-links { grid-template-columns: 1fr; }
   .fx-card, .fx-card:nth-child(4), .fx-card:nth-child(5), .fx-out-hero { grid-column: auto; }
   .fx-mosaic { grid-template-columns: 1fr; }
   .fx-mosaic .big { grid-row: auto; aspect-ratio: 16 / 10; }
   .fx-intro { padding-top: 2.75rem; }
   .fx-sec { padding-block: 2.75rem; }
-}
-@media (max-width: 620px) {
-  .fx-hero::before { background: linear-gradient(180deg, rgba(10,14,19,0.6) 0%, rgba(10,14,19,0.85) 40%, rgba(10,14,19,0.95) 100%); }
 }

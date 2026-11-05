@@ -70,7 +70,7 @@ h3 { font-size: 1.0625rem; font-weight: 600; line-height: 1.35; }
 /* Header */
 .site-head { position: sticky; top: 0; z-index: 30; background: var(--paper); border-bottom: 1px solid var(--line); }
 .site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: var(--header); }
-.brand { font-family: var(--serif); font-size: 1.3125rem; font-weight: 500; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
+.brand { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
 .site-nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.25rem); }
 .site-nav a { font-size: 0.9375rem; font-weight: 500; color: var(--muted); text-decoration: none; padding-block: 0.5rem; border-bottom: 2px solid transparent; }
 .site-nav a:hover { color: var(--ink); }
@@ -321,7 +321,7 @@ dialog.reader::backdrop { background: transparent; }
   :root { --header: 3.75rem; }
   .wrap { padding-inline: 1rem; }
   .block { padding-block: 3rem; }
-  .brand { font-size: 1.15rem; }
+  .brand { font-size: 1.4rem; }
   .site-nav { gap: 0.9rem; }
   .site-nav a { font-size: 0.875rem; }
   .cards, .cards.two, .facts, #expertise .facts, .skills > div { grid-template-columns: 1fr; }

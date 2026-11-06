@@ -712,3 +712,9 @@ dialog.reader::backdrop { background: transparent; }
 .writing h2.sub:first-child { border-top: 0; }
 .sub + .rows > li:first-child { border-top: 0; }
 .cta { border-top: 0; }
+.about-photo img:first-child { width: 100%; height: auto; border-radius: var(--radius); }
+.li-icon { display: inline-block; margin-top: 1rem; border-radius: 6px; transition: opacity 0.15s ease; }
+.li-icon img { display: block; width: 2rem; height: 2rem; border-radius: 6px; }
+.li-icon:hover { opacity: 0.8; }
+@media (max-width: 620px) { .about-photo { max-width: 13rem; } }
+.about-top .li-icon img { width: 2rem; height: 2rem; border-radius: 6px; }

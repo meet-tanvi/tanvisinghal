@@ -703,3 +703,4 @@ dialog.reader::backdrop { background: transparent; }
 #skills .skills > div { grid-template-columns: 10rem minmax(0, 1fr); }
 #skills .skills h3 { padding-top: 0; }
 @media (max-width: 620px) { #skills .skills > div { grid-template-columns: 1fr; } }
+.finder h2 + ul { margin-top: 0.9rem; }

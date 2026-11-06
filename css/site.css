@@ -718,3 +718,5 @@ dialog.reader::backdrop { background: transparent; }
 .li-icon:hover { opacity: 0.8; }
 @media (max-width: 620px) { .about-photo { max-width: 13rem; } }
 .about-top .li-icon img { width: 2rem; height: 2rem; border-radius: 6px; }
+.about-head { display: flex; align-items: center; gap: 1rem; }
+.about-head .li-icon { margin-top: 0.35rem; }

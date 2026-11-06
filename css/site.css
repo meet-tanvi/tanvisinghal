@@ -700,3 +700,6 @@ dialog.reader::backdrop { background: transparent; }
 .skills-cols li { color: var(--muted); font-size: 0.875rem; line-height: 1.45; padding-block: 0.2rem; }
 @media (max-width: 900px) { .xlist { grid-template-columns: repeat(2, minmax(0, 1fr)); } .skills-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .xlist, .skills-cols { grid-template-columns: 1fr; } }
+#skills .skills > div { grid-template-columns: 10rem minmax(0, 1fr); }
+#skills .skills h3 { padding-top: 0; }
+@media (max-width: 620px) { #skills .skills > div { grid-template-columns: 1fr; } }

@@ -721,3 +721,8 @@ dialog.reader::backdrop { background: transparent; }
 .about-head { display: flex; align-items: center; gap: 1rem; }
 .about-head .li-icon { margin-top: 0.35rem; }
 #education .rows li { grid-template-columns: 1fr; }
+
+/* Homepage headline */
+.hero.home h1 { font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.12; }
+.red-dot { color: #d80621; }
+:root[data-theme="dark"] .red-dot { color: #ff5c6a; }

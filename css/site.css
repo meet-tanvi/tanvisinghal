@@ -706,3 +706,9 @@ dialog.reader::backdrop { background: transparent; }
 .finder h2 + ul { margin-top: 0.9rem; }
 .fcase .go, .card .go[aria-hidden] { font-size: 1.1rem; transition: transform 0.15s ease; }
 .fcase:hover .go, a.card:hover .go[aria-hidden] { transform: translateX(4px); }
+
+/* Avoid two rules stacked close together */
+.roles > li:first-child { border-top: 0; }
+.writing h2.sub:first-child { border-top: 0; }
+.sub + .rows > li:first-child { border-top: 0; }
+.cta { border-top: 0; }

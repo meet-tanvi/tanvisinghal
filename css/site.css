@@ -720,3 +720,4 @@ dialog.reader::backdrop { background: transparent; }
 .about-top .li-icon img { width: 2rem; height: 2rem; border-radius: 6px; }
 .about-head { display: flex; align-items: center; gap: 1rem; }
 .about-head .li-icon { margin-top: 0.35rem; }
+#education .rows li { grid-template-columns: 1fr; }

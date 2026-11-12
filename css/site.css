@@ -726,3 +726,15 @@ dialog.reader::backdrop { background: transparent; }
 .hero.home h1 { font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.12; }
 .red-dot { color: #d80621; }
 :root[data-theme="dark"] .red-dot { color: #ff5c6a; }
+
+/* Restrained signature red and LinkedIn navigation. */
+:root { --signature-red: #d80621; }
+:root[data-theme="dark"] { --signature-red: #ff5c6a; }
+.site-nav a.linkedin-nav { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; width: 2.25rem; height: 2.25rem; margin-left: -0.3rem; padding: 0; border-bottom: 2px solid transparent; }
+.site-nav a.linkedin-nav:hover { color: var(--signature-red); }
+.site-nav a.linkedin-nav svg { display: block; width: 1.125rem; height: 1.125rem; fill: none; stroke: currentColor; stroke-width: 1.85; stroke-linecap: round; stroke-linejoin: round; }
+.site-nav .linkedin-nav-label { display: none; }
+@media (max-width: 900px) {
+  .js .site-nav a.linkedin-nav { justify-content: flex-start; width: 100%; min-height: 3rem; margin-left: 0; border-bottom: 0; gap: 0.75rem; }
+  .site-nav .linkedin-nav-label { display: inline; }
+}

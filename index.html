@@ -18,8 +18,8 @@
     .alt-home .alt-hero { padding-block: clamp(3.4rem, 6vw, 6.2rem) clamp(3.4rem, 6vw, 5rem); }
     .alt-home .alt-hero-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(14rem, 0.78fr); align-items: center; gap: clamp(2rem, 6vw, 7rem); }
     .alt-home .alt-kicker { color: var(--accent); font-size: 0.77rem; font-weight: 600; letter-spacing: 0.095em; line-height: 1.5; text-transform: uppercase; }
-    .alt-home .alt-hero h1 { max-width: 29ch; margin-top: 0; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.12; }
-    .alt-home .alt-hero .lede { max-width: 40rem; margin-top: 1.25rem; font-size: 1.0625rem; line-height: 1.6; }
+    .alt-home .alt-hero h1 { max-width: 29ch; margin-top: 0; font-size: clamp(2.125rem, 3.5vw, 3rem); line-height: 1.12; }
+    .alt-home .alt-hero .lede { max-width: 40rem; margin-top: 1.25rem; font-size: 1rem; line-height: 1.62; }
     .alt-home .alt-hero .btnrow { margin-top: 1.8rem; }
     .alt-home .alt-portrait { margin: 0; width: 100%; max-width: 21.5rem; justify-self: end; }
     .alt-home .alt-portrait-frame { overflow: hidden; border-radius: 9px; background: var(--tint); border: 1px solid var(--line); aspect-ratio: 4 / 5; }
@@ -28,6 +28,7 @@
     .alt-home .alt-section { padding-block: clamp(3.3rem, 6vw, 5.4rem); }
     .alt-home .alt-section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2.2rem; margin-bottom: 1.8rem; }
     .alt-home .alt-section-heading h2 { font-size: clamp(1.7rem, 2.8vw, 2.25rem); }
+    .alt-home .alt-section-heading h2::after { content: ""; display: block; width: 1.5rem; height: 2px; margin-top: .6rem; background: var(--signature-red); }
     .alt-home .alt-section-heading p { max-width: 33rem; margin-top: 0.45rem; color: var(--muted); font-size: 0.97rem; }
     .alt-home .alt-section-heading .textlink { font-size: 0.94rem; white-space: nowrap; }
     .alt-home .alt-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
@@ -65,7 +66,7 @@
     @media (max-width: 650px) {
       .alt-home .alt-hero { padding-block: 2.6rem 3rem; }
       .alt-home .alt-hero-grid { display: block; }
-      .alt-home .alt-hero h1 { max-width: none; font-size: clamp(2rem, 6vw, 2.4rem); }
+      .alt-home .alt-hero h1 { max-width: none; font-size: clamp(2.125rem, 6.3vw, 2.5rem); }
       .alt-home .alt-portrait { display: none; }
       .alt-home .alt-projects, .alt-home .alt-expertise, .alt-home .alt-close-grid { grid-template-columns: 1fr; }
       .alt-home .alt-projects { gap: 1.1rem; }
@@ -93,6 +94,7 @@
         <a href="experience.html">Experience</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a class="linkedin-nav" href="https://www.linkedin.com/in/tanvisinghal" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile (opens in a new tab)" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="2.2"/><path d="M7.5 10v7M7.5 7.3v.05M11.5 17v-7h3v1.5c.55-.95 1.4-1.5 2.7-1.5 1.6 0 2.3 1.05 2.3 2.9V17"/></svg><span class="linkedin-nav-label">LinkedIn</span></a>
       </nav>
       <button class="theme" id="theme" type="button" aria-pressed="false" aria-label="Switch to dark mode">
         <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>

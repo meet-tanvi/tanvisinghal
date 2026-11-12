@@ -18,8 +18,8 @@
     .alt-home .alt-hero { padding-block: clamp(3.4rem, 6vw, 6.2rem) clamp(3.4rem, 6vw, 5rem); }
     .alt-home .alt-hero-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(14rem, 0.78fr); align-items: center; gap: clamp(2rem, 6vw, 7rem); }
     .alt-home .alt-kicker { color: var(--accent); font-size: 0.77rem; font-weight: 600; letter-spacing: 0.095em; line-height: 1.5; text-transform: uppercase; }
-    .alt-home .alt-hero h1 { max-width: 19ch; margin-top: 1.15rem; font-size: clamp(2.75rem, 4.65vw, 4.65rem); line-height: 1.07; }
-    .alt-home .alt-hero .lede { max-width: 40rem; margin-top: 1.4rem; font-size: clamp(1.02rem, 1.5vw, 1.13rem); line-height: 1.7; }
+    .alt-home .alt-hero h1 { max-width: 29ch; margin-top: 0; font-size: clamp(2rem, 3.2vw, 2.75rem); line-height: 1.12; }
+    .alt-home .alt-hero .lede { max-width: 40rem; margin-top: 1.25rem; font-size: 1.0625rem; line-height: 1.6; }
     .alt-home .alt-hero .btnrow { margin-top: 1.8rem; }
     .alt-home .alt-portrait { margin: 0; width: 100%; max-width: 21.5rem; justify-self: end; }
     .alt-home .alt-portrait-frame { overflow: hidden; border-radius: 9px; background: var(--tint); border: 1px solid var(--line); aspect-ratio: 4 / 5; }
@@ -27,7 +27,7 @@
     .alt-home .alt-divider { border-top: 1px solid var(--line); }
     .alt-home .alt-section { padding-block: clamp(3.3rem, 6vw, 5.4rem); }
     .alt-home .alt-section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2.2rem; margin-bottom: 1.8rem; }
-    .alt-home .alt-section-heading h2 { font-size: clamp(1.8rem, 2.8vw, 2.45rem); }
+    .alt-home .alt-section-heading h2 { font-size: clamp(1.7rem, 2.8vw, 2.25rem); }
     .alt-home .alt-section-heading p { max-width: 33rem; margin-top: 0.45rem; color: var(--muted); font-size: 0.97rem; }
     .alt-home .alt-section-heading .textlink { font-size: 0.94rem; white-space: nowrap; }
     .alt-home .alt-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
@@ -52,7 +52,7 @@
     .alt-home .alt-close { background: var(--band); color: var(--on-band); padding-block: clamp(3rem, 5vw, 4.5rem); }
     .alt-home .alt-close-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, .55fr); gap: 2rem 4rem; align-items: end; }
     .alt-home .alt-close .eyebrow { color: var(--on-band-muted); }
-    .alt-home .alt-close .philosophy { max-width: 49rem; margin-top: 0.7rem; font-family: var(--serif); font-size: clamp(1.35rem, 2.35vw, 1.9rem); line-height: 1.38; }
+    .alt-home .alt-close .philosophy { max-width: 49rem; margin-top: 0.7rem; font-family: var(--serif); font-size: clamp(1.25rem, 1.8vw, 1.55rem); line-height: 1.45; }
     .alt-home .alt-close-action { justify-self: end; }
     .alt-home .alt-close-action p { margin-bottom: 0.8rem; color: var(--on-band-muted); font-size: 0.89rem; }
     .alt-home .alt-close-action .btn { background: var(--on-band); color: var(--band); border-color: var(--on-band); }
@@ -65,7 +65,7 @@
     @media (max-width: 650px) {
       .alt-home .alt-hero { padding-block: 2.6rem 3rem; }
       .alt-home .alt-hero-grid { display: block; }
-      .alt-home .alt-hero h1 { font-size: clamp(2.45rem, 9.2vw, 3.25rem); }
+      .alt-home .alt-hero h1 { max-width: none; font-size: clamp(2rem, 6vw, 2.4rem); }
       .alt-home .alt-portrait { display: none; }
       .alt-home .alt-projects, .alt-home .alt-expertise, .alt-home .alt-close-grid { grid-template-columns: 1fr; }
       .alt-home .alt-projects { gap: 1.1rem; }

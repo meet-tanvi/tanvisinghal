@@ -22,12 +22,9 @@
     .alt-home .alt-hero h1 { max-width: 19ch; margin-top: 1.15rem; font-size: clamp(2.75rem, 4.65vw, 4.65rem); line-height: 1.07; }
     .alt-home .alt-hero .lede { max-width: 40rem; margin-top: 1.4rem; font-size: clamp(1.02rem, 1.5vw, 1.13rem); line-height: 1.7; }
     .alt-home .alt-hero .btnrow { margin-top: 1.8rem; }
-    .alt-home .alt-hero-note { margin-top: 1.2rem; color: var(--soft); font-size: 0.9rem; }
-    .alt-home .alt-hero-note a { color: var(--accent); font-weight: 600; text-underline-offset: 3px; }
     .alt-home .alt-portrait { margin: 0; width: 100%; max-width: 21.5rem; justify-self: end; }
     .alt-home .alt-portrait-frame { overflow: hidden; border-radius: 9px; background: var(--tint); border: 1px solid var(--line); aspect-ratio: 4 / 5; }
     .alt-home .alt-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 23%; }
-    .alt-home .alt-portrait figcaption { display: flex; justify-content: space-between; gap: 1rem; padding-top: 0.75rem; color: var(--soft); font-size: 0.79rem; }
     .alt-home .alt-divider { border-top: 1px solid var(--line); }
     .alt-home .alt-section { padding-block: clamp(3.3rem, 6vw, 5.4rem); }
     .alt-home .alt-section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2.2rem; margin-bottom: 1.8rem; }
@@ -53,16 +50,6 @@
     .alt-home .alt-area .arrow { color: var(--accent); font-size: 1.15rem; transition: transform .18s ease; }
     .alt-home .alt-area:hover strong { color: var(--accent); }
     .alt-home .alt-area:hover .arrow { transform: translate(2px, -2px); }
-    .alt-home .alt-writing { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
-    .alt-home .alt-writing h2 { margin-top: 0.6rem; }
-    .alt-home .alt-writing p { margin-top: 0.8rem; color: var(--muted); max-width: 30rem; font-size: 1rem; }
-    .alt-home .alt-writing .textlink { display: inline-block; margin-top: 1.3rem; }
-    .alt-home .alt-writing-samples a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--line); padding: 1rem 0; text-decoration: none; }
-    .alt-home .alt-writing-samples a:last-child { border-bottom: 1px solid var(--line); }
-    .alt-home .alt-writing-samples small { display: block; color: var(--soft); font-size: 0.79rem; }
-    .alt-home .alt-writing-samples strong { display: block; margin-top: 0.15rem; font-size: 0.98rem; font-weight: 600; }
-    .alt-home .alt-writing-samples a:hover strong { color: var(--accent); }
-    .alt-home .alt-writing-samples .arrow { color: var(--accent); flex: none; }
     .alt-home .alt-close { background: var(--band); color: var(--on-band); padding-block: clamp(3rem, 5vw, 4.5rem); }
     .alt-home .alt-close-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, .55fr); gap: 2rem 4rem; align-items: end; }
     .alt-home .alt-close .eyebrow { color: var(--on-band-muted); }
@@ -75,14 +62,13 @@
     @media (max-width: 900px) {
       .alt-home .alt-hero-grid { grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr); gap: 2rem; }
       .alt-home .alt-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .alt-home .alt-writing { grid-template-columns: 1fr 1fr; gap: 2rem; }
     }
     @media (max-width: 650px) {
       .alt-home .alt-hero { padding-block: 2.6rem 3rem; }
       .alt-home .alt-hero-grid { display: block; }
       .alt-home .alt-hero h1 { font-size: clamp(2.45rem, 9.2vw, 3.25rem); }
       .alt-home .alt-portrait { display: none; }
-      .alt-home .alt-projects, .alt-home .alt-expertise, .alt-home .alt-writing, .alt-home .alt-close-grid { grid-template-columns: 1fr; }
+      .alt-home .alt-projects, .alt-home .alt-expertise, .alt-home .alt-close-grid { grid-template-columns: 1fr; }
       .alt-home .alt-projects { gap: 1.1rem; }
       .alt-home .alt-area { min-height: 5.1rem; }
       .alt-home .alt-close-action { justify-self: start; }
@@ -120,18 +106,15 @@
     <section class="alt-hero" aria-labelledby="home-heading">
       <div class="wrap alt-hero-grid">
         <div>
-          <p class="alt-kicker">Corporate communications · Public relations · Marketing</p>
-          <h1 id="home-heading">I turn complex ideas into clear stories that build understanding and trust<span class="red-dot">.</span></h1>
-          <p class="lede">I am a Toronto-based communications and marketing professional with more than ten years of experience advising executives, leading integrated campaigns and managing communications teams. My work brings together public-interest communications, brand, media relations and audience engagement, from the energy and finance sectors to Canadian technology and media.</p>
+          <h1 id="home-heading">I turn complex ideas into clear, compelling narratives to build trust and advance business goals<span class="red-dot">.</span></h1>
+          <p class="lede">I am a Toronto-based marketing, communications and partnerships professional with more than ten years of experience shaping brand strategy, leading integrated campaigns, advising senior executives and managing teams. My work combines corporate communications, public relations, marketing and business development to strengthen reputation, sharpen positioning and develop strategic partnerships. I've worked in the energy, infrastructure, finance, technology, government and media sectors, with organizations ranging from startups to large enterprises.</p>
           <div class="btnrow">
-            <a class="btn" href="#selected">Explore selected work</a>
-            <a class="btn ghost" href="writing.html">See writing samples</a>
+            <a class="btn" href="work.html">Explore my work</a>
+            <a class="btn ghost" href="experience.html">View experience</a>
           </div>
-          <p class="alt-hero-note">Currently leading marketing, communications and partnerships at Moonlite Labs. <a href="experience.html">View experience &rarr;</a></p>
         </div>
         <figure class="alt-portrait">
           <div class="alt-portrait-frame"><img src="assets/site/portrait.jpg" alt="Portrait of Tanvi Singhal" width="640" height="800" fetchpriority="high"></div>
-          <figcaption><span>Tanvi Singhal</span><span>Toronto, Canada</span></figcaption>
         </figure>
       </div>
     </section>
@@ -184,9 +167,7 @@
         <div class="alt-section-heading">
           <div>
             <h2 id="expertise-title">Explore by area of work</h2>
-            <p>Find work that is most relevant to your role or interest.</p>
           </div>
-          <a class="textlink" href="work.html">View all work &rarr;</a>
         </div>
         <div class="alt-expertise">
           <a class="alt-area" href="work-corporate.html"><span><strong>Corporate communications &amp; media relations</strong><small>Corporate news, media materials and reputation</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
@@ -195,22 +176,6 @@
           <a class="alt-area" href="work-marketing.html"><span><strong>Marketing, brand &amp; campaigns</strong><small>Integrated campaigns, branding and event marketing</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
           <a class="alt-area" href="work-digital.html"><span><strong>Digital &amp; social media</strong><small>Content strategy, social performance and web</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
           <a class="alt-area" href="work-impact.html"><span><strong>CSR, community &amp; public impact</strong><small>Public-information campaigns and impact storytelling</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="alt-section" aria-labelledby="writing-title">
-      <div class="wrap alt-writing">
-        <div>
-          <span class="alt-kicker">Writing &amp; editing</span>
-          <h2 id="writing-title">The work behind the words</h2>
-          <p>Selected writing includes executive messages, press releases, published thought leadership, long-form publications and practical technology explainers.</p>
-          <a class="textlink" href="writing.html">Browse writing samples &rarr;</a>
-        </div>
-        <div class="alt-writing-samples" aria-label="Featured writing examples">
-          <a href="https://cprstoronto.com/2026/02/10/the-communicators-guide-to-responsible-ai-chatbot-deployment-7-key-considerations/" target="_blank" rel="noopener"><span><small>Published article · CPRS Toronto</small><strong>The Communicator's Guide to Responsible AI Chatbot Deployment</strong></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a href="work-executive.html"><span><small>Executive communications · REC Limited</small><strong>Chairman's published message to shareholders</strong></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a href="case-rec-50.html"><span><small>Long-form corporate storytelling · REC Limited</small><strong><i>A Journey Towards Infinity</i>, REC's 50th anniversary book</strong></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
         </div>
       </div>
     </section>

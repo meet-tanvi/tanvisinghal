@@ -738,3 +738,11 @@ dialog.reader::backdrop { background: transparent; }
   .js .site-nav a.linkedin-nav { justify-content: flex-start; width: 100%; min-height: 3rem; margin-left: 0; border-bottom: 0; gap: 0.75rem; }
   .site-nav .linkedin-nav-label { display: inline; }
 }
+
+/* LinkedIn logo sits outside the mobile dropdown, beside the theme switch. */
+.site-head a.linkedin-header { display: inline-grid; place-items: center; flex: none; width: 2.5rem; height: 2.5rem; color: #0a66c2; text-decoration: none; border-radius: 6px; order: 1; }
+.site-head a.linkedin-header svg { width: 1.22rem; height: 1.22rem; display: block; }
+.site-head a.linkedin-header:hover { color: #074a93; background: var(--tint); }
+:root[data-theme="dark"] .site-head a.linkedin-header { color: #78b9f1; }
+:root[data-theme="dark"] .site-head a.linkedin-header:hover { color: #a6d2f9; }
+@media (max-width: 900px) { .site-head a.linkedin-header { order: 1; } }

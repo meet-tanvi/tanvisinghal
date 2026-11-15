@@ -166,3 +166,28 @@
   }, { rootMargin: '0px 0px -8% 0px' });
   els.forEach(function (el) { io.observe(el); });
 })();
+
+
+/* Writing filters. Cards stay visible without JavaScript, and each sample can belong to several categories. */
+(function () {
+  'use strict';
+  var filters = Array.prototype.slice.call(document.querySelectorAll('[data-writing-filter]'));
+  if (!filters.length) return;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.writing-card[data-categories]'));
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.writing-group'));
+  var count = document.getElementById('writing-count');
+  function select(category) {
+    var visible = 0;
+    filters.forEach(function (button) { button.setAttribute('aria-pressed', button.getAttribute('data-writing-filter') === category ? 'true' : 'false'); });
+    cards.forEach(function (card) {
+      var terms = (card.getAttribute('data-categories') || '').split(/\s+/);
+      var show = category === 'all' || terms.indexOf(category) !== -1;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+    groups.forEach(function (group) { group.hidden = !group.querySelector('.writing-card:not([hidden])'); });
+    if (count) count.textContent = category === 'all' ? 'Showing all ' + visible + ' samples' : 'Showing ' + visible + ' ' + (visible === 1 ? 'sample' : 'samples');
+  }
+  filters.forEach(function (button) { button.addEventListener('click', function () { select(button.getAttribute('data-writing-filter')); }); });
+  select('all');
+})();

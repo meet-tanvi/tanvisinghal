@@ -856,3 +856,27 @@ a.writing-card:focus-visible {
   a.writing-card { transition: none; }
   a.writing-card:hover, a.writing-card:focus-visible { transform: none; }
 }
+
+
+/* Writing sample pages: a quiet, single-column editorial layout. */
+.writing-simple { max-width: 54rem; padding-block: clamp(1.4rem, 3.5vw, 2.8rem) 4.6rem; }
+.writing-simple-back { display: inline-block; font-size: .9rem; color: var(--accent); font-weight: 500; text-decoration: none; }
+.writing-simple-back:hover { text-decoration: underline; text-underline-offset: 3px; }
+.writing-simple h1 { font-size: clamp(2.1rem, 3.65vw, 3.1rem); line-height: 1.14; margin-top: 1.35rem; max-width: 50rem; }
+.writing-simple-meta { margin-top: .7rem; color: var(--soft); font-size: .875rem; line-height: 1.5; }
+.writing-simple-intro { margin-top: 1.55rem; max-width: 43rem; font-size: 1.08rem; line-height: 1.7; color: var(--muted); }
+.writing-simple-preview { margin: 2rem 0 0; max-width: 44rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.writing-simple-preview a { display: block; padding: .65rem; }
+.writing-simple-preview img { display: block; width: auto; max-width: 100%; height: auto; max-height: 31rem; margin: 0 auto; object-fit: contain; transition: opacity .2s ease; }
+.writing-simple-preview a:hover img { opacity: .9; }
+.writing-simple-actions { display: flex; flex-wrap: wrap; align-items: baseline; gap: .65rem 1.65rem; margin-top: 1.45rem; }
+.writing-simple-actions a { display: inline-flex; align-items: baseline; gap: .3rem; color: var(--accent); text-decoration: none; font-size: .95rem; font-weight: 600; line-height: 1.5; }
+.writing-simple-actions a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.writing-simple-actions a + a { color: var(--muted); font-weight: 500; }
+@media (max-width: 650px) {
+ .writing-simple { padding-block: 1.3rem 3rem; }
+ .writing-simple h1 { font-size: clamp(2rem, 8vw, 2.35rem); margin-top: 1.1rem; }
+ .writing-simple-intro { font-size: 1rem; margin-top: 1.25rem; line-height: 1.65; }
+ .writing-simple-preview { margin-top: 1.4rem; }
+ .writing-simple-actions { margin-top: 1.25rem; flex-direction: column; align-items: flex-start; gap: .55rem; }
+}

@@ -820,3 +820,11 @@ dialog.reader::backdrop { background: transparent; }
 .writing-library { padding-top: 1.25rem; }
 .writing-library .writing-count { margin-bottom: 1.15rem; }
 @media (max-width: 650px) { .writing-intro { padding-block: 1.25rem .85rem; } .writing-library { padding-top: 1rem; } }
+
+/* Writing cards: the entire card is one accessible link. */
+a.writing-card { text-decoration: none; color: inherit; cursor: pointer; transition: border-color .18s ease, box-shadow .18s ease; }
+a.writing-card:hover, a.writing-card:focus-visible { border-color: var(--accent); }
+a.writing-card:hover h3, a.writing-card:focus-visible h3 { color: var(--accent); }
+a.writing-card:hover .writing-cover img, a.writing-card:focus-visible .writing-cover img { transform: scale(1.03); }
+a.writing-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+a.writing-card .writing-read { text-decoration: none; }

@@ -814,3 +814,9 @@ dialog.reader::backdrop { background: transparent; }
  .writing-reading blockquote { padding: 1rem; }
  .writing-return { flex-direction: column; }
 }
+
+/* Writing: tighter title-to-filter spacing, with all samples in one collection. */
+.writing-intro { padding-block: 1.7rem 1.1rem; }
+.writing-library { padding-top: 1.25rem; }
+.writing-library .writing-count { margin-bottom: 1.15rem; }
+@media (max-width: 650px) { .writing-intro { padding-block: 1.25rem .85rem; } .writing-library { padding-top: 1rem; } }

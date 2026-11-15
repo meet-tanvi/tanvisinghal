@@ -828,3 +828,31 @@ a.writing-card:hover h3, a.writing-card:focus-visible h3 { color: var(--accent);
 a.writing-card:hover .writing-cover img, a.writing-card:focus-visible .writing-cover img { transform: scale(1.03); }
 a.writing-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 a.writing-card .writing-read { text-decoration: none; }
+
+/* One full-card link per writing sample, with a single hover/focus treatment.
+   Explicitly suppress link underlines on all text within the card. */
+a.writing-card,
+a.writing-card:link,
+a.writing-card:visited,
+a.writing-card:hover,
+a.writing-card:focus-visible,
+a.writing-card *,
+a.writing-card:hover *,
+a.writing-card:focus-visible * {
+  text-decoration: none !important;
+}
+a.writing-card {
+  cursor: pointer;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+a.writing-card:hover,
+a.writing-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 5px 20px rgba(20, 35, 45, .12);
+  background: var(--surface);
+}
+@media (prefers-reduced-motion: reduce) {
+  a.writing-card { transition: none; }
+  a.writing-card:hover, a.writing-card:focus-visible { transform: none; }
+}

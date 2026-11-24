@@ -885,9 +885,9 @@ a.writing-card:focus-visible {
 .site-head .brand::after {
   content: "";
   display: inline-block;
-  width: .25rem;
-  height: .25rem;
-  margin-left: .17rem;
+  width: .4rem;
+  height: .4rem;
+  margin-left: .16rem;
   border-radius: 50%;
   background: var(--signature-red);
   vertical-align: baseline;
@@ -895,12 +895,23 @@ a.writing-card:focus-visible {
 .intro h1::after,
 .about-head h1::after,
 .block-head h2::after,
-.fx-hero h1::after {
+.fx-hero h1::after,
+.writing-simple h1::after {
   content: "";
   display: block;
-  width: 1.75rem;
+  width: 2.75rem;
+  height: 3px;
+  margin-top: .7rem;
+  background: var(--signature-red);
+}
+/* Chapter numbers and feature-section rules are editorial, not KPI indicators. */
+.cs-n { color: var(--signature-red); }
+.fx-sec h2::after {
+  content: "";
+  display: block;
+  width: 2rem;
   height: 2px;
-  margin-top: .65rem;
+  margin-top: .55rem;
   background: var(--signature-red);
 }
 .sub { position: relative; }
@@ -909,7 +920,7 @@ a.writing-card:focus-visible {
   position: absolute;
   top: -1px;
   left: 0;
-  width: 1.75rem;
-  height: 2px;
+  width: 2.75rem;
+  height: 3px;
   background: var(--signature-red);
 }

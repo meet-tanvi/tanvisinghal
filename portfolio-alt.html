@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tanvi Singhal | Marketing, Communications &amp; Partnerships</title>
+  <link rel="canonical" href="https://tanvisinghal.com/">
+  <meta name="description" content="Tanvi Singhal is a Toronto-based marketing, communications and partnerships professional with 10+ years of experience in brand strategy, corporate communications, PR and business development.">
+  <link rel="icon" href="favicon.ico?v=3" sizes="any">
+  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/portfolio-alt.css?v=20261123editorial3">
+  <style>
+    /* Homepage-specific styles, scoped to this page. */
+    .alt-home .alt-hero { padding-block: clamp(3.4rem, 6vw, 6.2rem) clamp(3.4rem, 6vw, 5rem); }
+    .alt-home .alt-hero-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(14rem, 0.78fr); align-items: center; gap: clamp(2rem, 6vw, 7rem); }
+    .alt-home .alt-kicker { color: var(--accent); font-size: 0.77rem; font-weight: 600; letter-spacing: 0.095em; line-height: 1.5; text-transform: uppercase; }
+    .alt-home .alt-hero h1 { max-width: 29ch; margin-top: 0; font-size: clamp(2.125rem, 3.5vw, 3rem); line-height: 1.12; }
+    .alt-home .alt-hero .lede { max-width: 40rem; margin-top: 1.25rem; font-size: 1rem; line-height: 1.62; }
+    .alt-home .alt-hero .lede + .lede { margin-top: .85rem; }
+    .alt-home .alt-hero .btnrow { margin-top: 1.8rem; }
+    .alt-home .alt-portrait { margin: 0; width: 100%; max-width: 21.5rem; justify-self: end; }
+    .alt-home .alt-portrait-frame { overflow: hidden; border-radius: 9px; background: var(--tint); border: 1px solid var(--line); aspect-ratio: 4 / 5; }
+    .alt-home .alt-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 23%; }
+    .alt-home .alt-divider { border-top: 1px solid var(--line); }
+    .alt-home .alt-section { padding-block: clamp(3.3rem, 6vw, 5.4rem); }
+    .alt-home .alt-section-heading { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: 1rem 2.2rem; margin-bottom: 1.8rem; }
+    .alt-home .alt-section-heading h2 { font-size: clamp(1.7rem, 2.8vw, 2.25rem); }
+    .alt-home .alt-section-heading h2::after { content: ""; display: block; width: 1.5rem; height: 2px; margin-top: .6rem; background: var(--signature-red); }
+    .alt-home .alt-section-heading p { max-width: 33rem; margin-top: 0.45rem; color: var(--muted); font-size: 0.97rem; }
+    .alt-home .alt-section-heading .textlink { font-size: 0.94rem; white-space: nowrap; }
+    .alt-home .alt-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+    .alt-home .alt-project { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); text-decoration: none; }
+    .alt-home .alt-project:hover { border-color: var(--accent); }
+    .alt-home .alt-project .visual { aspect-ratio: 16 / 10; overflow: hidden; background: var(--tint); }
+    .alt-home .alt-project img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; transition: transform .2s ease; }
+    .alt-home .alt-project:hover img { transform: scale(1.025); }
+    .alt-home .alt-project-content { display: flex; flex: 1; flex-direction: column; padding: 1.2rem 1.25rem 1.25rem; }
+    .alt-home .alt-project .meta { color: var(--soft); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.025em; }
+    .alt-home .alt-project h3 { margin-top: 0.4rem; font-size: 1.06rem; line-height: 1.4; }
+    .alt-home .alt-project p { margin-top: 0.45rem; color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
+    .alt-home .alt-project .go { margin-top: auto; padding-top: 1rem; color: var(--accent); font-size: 0.87rem; font-weight: 600; }
+    .alt-home .alt-tinted { background: var(--tint); }
+    .alt-home .alt-expertise { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 3.2rem; margin-top: 0.4rem; }
+    .alt-home .alt-area { display: flex; align-items: center; justify-content: space-between; gap: 0.9rem; min-height: 5.8rem; border-top: 1px solid var(--line); text-decoration: none; }
+    .alt-home .alt-area strong { display: block; font-size: 1rem; font-weight: 600; line-height: 1.4; }
+    .alt-home .alt-area small { display: block; margin-top: 0.2rem; color: var(--muted); font-size: 0.89rem; line-height: 1.45; }
+    .alt-home .alt-area .arrow { color: var(--accent); font-size: 1.15rem; transition: transform .18s ease; }
+    .alt-home .alt-area:hover strong { color: var(--accent); }
+    .alt-home .alt-area:hover .arrow { transform: translate(2px, -2px); }
+    .alt-home .alt-close { background: var(--band); color: var(--on-band); padding-block: clamp(3rem, 5vw, 4.5rem); }
+    .alt-home .alt-close-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, .55fr); gap: 2rem 4rem; align-items: end; }
+    .alt-home .alt-close .eyebrow { color: var(--on-band-muted); }
+    .alt-home .alt-close .philosophy { max-width: 49rem; margin-top: 0.7rem; font-family: var(--serif); font-size: clamp(1.25rem, 1.8vw, 1.55rem); line-height: 1.45; }
+    .alt-home .alt-close-action { justify-self: end; }
+    .alt-home .alt-close-action p { margin-bottom: 0.8rem; color: var(--on-band-muted); font-size: 0.89rem; }
+    .alt-home .alt-close-action .btn { background: var(--on-band); color: var(--band); border-color: var(--on-band); }
+    .alt-home .alt-close-action .btn:hover { background: #fff; border-color: #fff; }
+    .alt-home .alt-close + .site-foot { border-top: 1px solid rgba(255,255,255,.14); }
+    @media (max-width: 900px) {
+      .alt-home .alt-hero-grid { grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr); gap: 2rem; }
+      .alt-home .alt-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 650px) {
+      .alt-home .alt-hero { padding-block: 2.6rem 3rem; }
+      .alt-home .alt-hero-grid { display: block; }
+      .alt-home .alt-hero h1 { max-width: none; font-size: clamp(2.125rem, 6.3vw, 2.5rem); }
+      .alt-home .alt-portrait { display: none; }
+      .alt-home .alt-projects, .alt-home .alt-expertise, .alt-home .alt-close-grid { grid-template-columns: 1fr; }
+      .alt-home .alt-projects { gap: 1.1rem; }
+      .alt-home .alt-area { min-height: 5.1rem; }
+      .alt-home .alt-close-action { justify-self: start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .alt-home .alt-project img, .alt-home .alt-area .arrow { transition: none; }
+    }
+  </style>
+  <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+  <meta name="robots" content="noindex,follow">
+</head>
+<body class="alt-home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="brand" href="portfolio-alt.html">Tanvi Singhal</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="work-alt.html">Work</a>
+        <a href="writing-alt.html">Writing</a>
+        <a href="experience-alt.html">Experience</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        
+      </nav>
+      <a class="linkedin-header" href="https://www.linkedin.com/in/tanvisinghal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)" title="LinkedIn"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708C16 15.487 15.474 16 14.825 16H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.396V6.169H2.542v7.373h2.401zM3.743 5.162c.837 0 1.358-.554 1.358-1.248-.016-.709-.521-1.247-1.342-1.247S2.401 3.205 2.401 3.914c0 .694.521 1.248 1.326 1.248h.016zm9.79 8.38V9.5c0-2.163-1.154-3.17-2.693-3.17-1.243 0-1.8.684-2.108 1.165V6.17h-2.4c.032.86 0 7.373 0 7.373h2.4V9.424c0-.22.016-.44.081-.597.176-.44.577-.896 1.25-.896.882 0 1.235.676 1.235 1.665v3.946h2.237z" fill="currentColor"/></svg></a>
+      <button class="theme" id="theme" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap" style="padding-top:18px;font-size:.88rem"><strong>Updated portfolio preview</strong> · <a href="index.html">View current published homepage</a></div>
+    <section class="alt-hero" aria-labelledby="home-heading">
+      <div class="wrap alt-hero-grid">
+        <div>
+          <h1 id="home-heading">I translate research, market insights and business data into integrated communications, marketing and business development strategies<span class="red-dot">.</span></h1>
+          <p class="lede">I translate research, market insights and business data into strategy, identifying opportunities and connecting priorities across communications, marketing, brand and business development.</p>
+          <p class="lede">My experience includes diagnosing performance gaps, developing integrated strategies, building operational processes and establishing partnerships that support organizational objectives.</p>
+          <p class="lede">I use AI and digital technologies to strengthen analysis, improve workflows and inform decisions, while keeping human judgment, creativity and relationships central to my work.</p>
+          <div class="btnrow">
+            <a class="btn" href="work-alt.html">Explore my work</a>
+            <a class="btn ghost" href="experience-alt.html">View experience</a>
+          </div>
+        </div>
+        <figure class="alt-portrait">
+          <div class="alt-portrait-frame"><img src="assets/site/portrait.jpg" alt="Portrait of Tanvi Singhal" width="640" height="800" fetchpriority="high"></div>
+        </figure>
+      </div>
+    </section>
+
+    <div class="alt-divider" aria-hidden="true"></div>
+
+    <section class="alt-section" id="selected" aria-labelledby="selected-title">
+      <div class="wrap">
+        <div class="alt-section-heading">
+          <div>
+            <h2 id="selected-title">Selected work</h2>
+            <p>Three projects that illustrate my approach to strategy, storytelling and engagement in different settings.</p>
+          </div>
+          <a class="textlink" href="case-studies-alt.html">Explore all case studies &rarr;</a>
+        </div>
+        <div class="alt-projects">
+          <a class="alt-project" href="case-tiff-alt.html">
+            <div class="visual"><img src="assets/cases/tiff-team.jpg" alt="Moonlite Labs team at TIFF: The Market" loading="lazy"></div>
+            <div class="alt-project-content">
+              <span class="meta">Moonlite Labs · Integrated marketing</span>
+              <h3>TIFF: The Market</h3>
+              <p>Research-led positioning, media engagement and a seven-day exhibition for filmmakers and industry audiences.</p>
+              <span class="go">Read the case study &rarr;</span>
+            </div>
+          </a>
+          <a class="alt-project" href="case-manitoba.html">
+            <div class="visual" style="display:flex;align-items:center;justify-content:center;background:var(--surface, #f3f1ed);min-height:190px"><div style="text-align:center;padding:24px"><span style="display:block;font-size:clamp(2rem,5vw,3.6rem);font-weight:600;line-height:1.1">6%–12%</span><span style="display:block;margin-top:12px">Segmented email click rates</span></div></div>
+            <div class="alt-project-content">
+              <span class="meta">Moonlite Labs · B2B marketing</span>
+              <h3>Targeted outreach in Manitoba</h3>
+              <p>Industry-segmented email campaigns that connected a creative AI platform with professional audiences.</p>
+              <span class="go">Read the case study &rarr;</span>
+            </div>
+          </a>
+          <a class="alt-project" href="case-watts-up.html">
+            <div class="visual"><img src="assets/cases/watts-up-covers.jpg" alt="Covers of Watts Up, REC's employee publication" loading="lazy"></div>
+            <div class="alt-project-content">
+              <span class="meta">REC Limited · Internal communications</span>
+              <h3>Creating <i>Watts Up</i></h3>
+              <p>Conceived and launched a multilingual employee publication that connected colleagues across offices and won two industry awards.</p>
+              <span class="go">Read the case study &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt-section alt-tinted" id="expertise" aria-labelledby="expertise-title">
+      <div class="wrap">
+        <div class="alt-section-heading">
+          <div>
+            <h2 id="expertise-title">Explore by area of work</h2>
+          </div>
+        </div>
+        <div class="alt-expertise">
+          <a class="alt-area" href="work-corporate-alt.html"><span><strong>Corporate communications &amp; media relations</strong><small>Corporate news, media materials and reputation</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-executive.html"><span><strong>Executive communications &amp; thought leadership</strong><small>Executive messages, speaker materials and bylined work</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-internal-alt.html"><span><strong>Internal &amp; change communications</strong><small>Employee engagement, leadership messaging and change</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-marketing-alt.html"><span><strong>Marketing, brand &amp; campaigns</strong><small>Integrated campaigns, branding and event marketing</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-digital-alt.html"><span><strong>Digital &amp; social media</strong><small>Content strategy, social performance and web</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-impact-alt.html"><span><strong>CSR, community &amp; public impact</strong><small>Public-information campaigns and impact storytelling</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt-close" aria-labelledby="approach-title">
+      <div class="wrap alt-close-grid">
+        <div>
+          <p class="eyebrow" id="approach-title">What guides my work</p>
+          <p class="philosophy">I connect organizational goals with meaningful value for stakeholders through the stories we tell, the voices we include and the partnerships we build.</p>
+        </div>
+        <div class="alt-close-action">
+          <p>Interested in working together?</p>
+          <a class="btn" href="mailto:tanvisinghal.wrk@gmail.com">Get in touch &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>Tanvi Singhal &middot; Toronto, Canada</span>
+      <span class="foot-links"><a href="mailto:tanvisinghal.wrk@gmail.com">tanvisinghal.wrk@gmail.com</a><a href="https://www.linkedin.com/in/tanvisinghal" target="_blank" rel="noopener">LinkedIn &#8599;</a></span>
+    </div>
+  </footer>
+  <script src="js/site.js?v=20261106"></script>
+</body>
+</html>

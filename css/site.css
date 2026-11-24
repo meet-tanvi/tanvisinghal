@@ -882,16 +882,6 @@ a.writing-card:focus-visible {
 }
 
 /* Editorial signature details: decorative red only, never status or action colour. */
-.site-head .brand::after {
-  content: "";
-  display: inline-block;
-  width: .4rem;
-  height: .4rem;
-  margin-left: .16rem;
-  border-radius: 50%;
-  background: var(--signature-red);
-  vertical-align: baseline;
-}
 .intro h1::after,
 .about-head h1::after,
 .block-head h2::after,

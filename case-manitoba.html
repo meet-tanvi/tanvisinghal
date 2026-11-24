@@ -13,6 +13,38 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/portfolio-alt.css?v=20261112li3">
   <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
+
+<style>
+/* Manitoba campaign case study */
+.mb-case .intro { padding-bottom: 1rem; }
+.mb-intro { padding-top: clamp(2rem, 5vw, 4rem); padding-bottom: 4rem; }
+.mb-hero { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(15rem,.9fr); gap:clamp(1.5rem,4vw,4.5rem); align-items:center; }
+.mb-lead { font-size:clamp(1.15rem,1.85vw,1.5rem); line-height:1.48; color:var(--muted); max-width:37rem; margin-top:1rem; }
+.mb-kpi { padding:1.55rem 1.75rem; background:var(--tint); border-radius:var(--radius); border:1px solid var(--line); }
+.mb-kpi .mb-kicker { color:var(--soft); display:block; font-size:.8rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; }
+.mb-kpi strong { display:block; font-family:var(--serif); font-weight:500; color:var(--ink); font-size:clamp(3.6rem,6vw,5.1rem); line-height:1.04; margin:.8rem 0 .3rem; }
+.mb-kpi small { display:block; color:var(--muted); line-height:1.5; }
+.mb-section { margin-top:2.75rem; padding-top:2.5rem; border-top:1px solid var(--line); }
+.mb-section h2 { font-size:clamp(1.55rem,2.6vw,2.2rem); margin-bottom:1.25rem; }
+.mb-eyebrow { display:block; color:var(--soft); font-size:.83rem; font-weight:600; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.6rem; }
+.mb-audience { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.mb-audience article { padding:1.4rem; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); }
+.mb-audience h3 { font-family:var(--serif); font-size:clamp(1.35rem,2vw,1.7rem); font-weight:500; margin-bottom:.55rem; }
+.mb-audience p { color:var(--muted); line-height:1.55; }
+.mb-flow { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.8rem; list-style:none; }
+.mb-flow li { position:relative; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); padding:1.1rem 1.05rem; min-height:10rem; }
+.mb-flow li b { display:block; font-size:.8rem; color:var(--accent); letter-spacing:.03em; margin-bottom:.9rem; }
+.mb-flow li strong { display:block; font-size:1rem; font-weight:600; margin-bottom:.4rem; }
+.mb-flow li span { color:var(--muted); display:block; font-size:.9rem; line-height:1.5; }
+.mb-outcome { background:var(--band); color:var(--on-band); padding:clamp(1.3rem,3vw,2.4rem); border-radius:var(--radius); }
+.mb-outcome h2 { color:var(--on-band); margin-bottom:.65rem; }
+.mb-outcome p { color:var(--on-band-muted); max-width:55rem; }
+.mb-outcome .mb-note { margin-top:.75rem; font-size:.86rem; }
+.mb-credit { padding:1.15rem 0 0; color:var(--muted); font-size:.96rem; }
+.mb-case .pager { margin-top:3rem; }
+@media(max-width:800px){.mb-hero{grid-template-columns:1fr}.mb-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.mb-audience,.mb-flow{grid-template-columns:1fr}.mb-flow li{min-height:auto}.mb-intro{padding-bottom:2.5rem}}
+</style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -34,23 +66,71 @@
     </div>
   </header>
 
-  <main id="main">
- <div class="intro"><div class="wrap">
- <p class="crumb"><a href="case-studies-alt.html">Case studies</a> <span aria-hidden="true">/</span> Manitoba outreach</p>
- <h1>Targeted outreach to Manitoba business leaders</h1>
- <p class="cs-tags">Moonlite Labs &middot; B2B marketing &amp; email strategy &middot; October 2026</p></div></div>
- <div class="wrap cs-page">
- <div class="cs-top"><p class="lede">I developed segmented outreach to Manitoba's creative and business communities, adapting the message to how different organizations might use AI in their work.</p>
- <div class="cs-media cs-type"><span>Campaign click rates</span><b>6%–12%</b><span>Industry-segmented email sends, October 2026</span></div></div>
- <div class="cs-body">
- <div class="reveal cs"><h2><span class="cs-n">01</span>Challenge</h2><p>A broad message about generative AI would not address the needs of every business. Film and television teams, advertising and marketing agencies, and other creative organizations have different production processes and reasons to explore new tools. Outreach needed to make the relevance of the platform clear to each audience.</p></div>
- <div class="reveal cs"><h2><span class="cs-n">02</span>My role</h2><p>As Moonlite Labs' Marketing, Communications &amp; Partnerships Lead, I developed the audience approach, messaging and email communications, using campaign performance to evaluate response.</p></div>
- <div class="reveal cs"><h2><span class="cs-n">03</span>Approach</h2><p>I organized the outreach by industry and tailored the copy to each segment's workflows, from planning and visualizing ideas to producing and refining creative work. The messages invited relevant businesses to continue the conversation and explore practical applications.</p></div>
- <div class="reveal cs"><h2><span class="cs-n">04</span>Results</h2><p>The segmented campaigns achieved click rates ranging from 6% to 12%, demonstrating response to audience-specific messaging. These figures measure clicks, not meetings booked or sales conversions.</p></div>
- <div class="reveal cs"><h2><span class="cs-n">05</span>What this demonstrates</h2><p>The work brought together industry research, business-oriented messaging, audience segmentation and performance measurement. It illustrates my approach to making emerging technology relevant to specific professional audiences.</p></div>
- </div>
- <nav class="pager" aria-label="More case studies"><a href="case-tiff-alt.html"><small>Previous</small>TIFF: The Market</a><a href="case-website.html"><small>Next</small>Website and Inspiration</a></nav>
- </div></main>
+  
+<main id="main" class="mb-case">
+  <div class="intro">
+    <div class="wrap">
+      <p class="crumb"><a href="case-studies-alt.html">Case studies</a> <span aria-hidden="true">/</span> Manitoba outreach</p>
+      <h1>Targeted outreach to Manitoba business leaders</h1>
+      <p class="cs-tags">Moonlite Labs &middot; B2B email marketing &middot; October 2026</p>
+    </div>
+  </div>
+  <div class="wrap mb-intro">
+    <section class="mb-hero" aria-label="Campaign summary">
+      <div>
+        <span class="mb-eyebrow">The opportunity</span>
+        <p class="mb-lead">Different industries have different reasons to explore creative AI. I developed separate email campaigns for film and television professionals and advertising and marketing audiences, rather than relying on a single generic message.</p>
+      </div>
+      <div class="mb-kpi">
+        <span class="mb-kicker">Measured response</span>
+        <strong>6%–12%</strong>
+        <small>Click rates across the industry-segmented email campaigns</small>
+      </div>
+    </section>
+
+    <section class="mb-section" aria-labelledby="mb-audience-title">
+      <span class="mb-eyebrow">01 · Audience strategy</span>
+      <h2 id="mb-audience-title">One product, two industry perspectives</h2>
+      <div class="mb-audience">
+        <article>
+          <h3>Film &amp; television</h3>
+          <p>Position the platform in the context of production and visual storytelling workflows.</p>
+        </article>
+        <article>
+          <h3>Advertising &amp; marketing</h3>
+          <p>Connect the platform's capabilities with the work of developing and refining creative content.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mb-section" aria-labelledby="mb-process-title">
+      <span class="mb-eyebrow">02 · Campaign approach</span>
+      <h2 id="mb-process-title">From audience to message to response</h2>
+      <ol class="mb-flow">
+        <li><b>01</b><strong>Segment</strong><span>Organize outreach by professional audience.</span></li>
+        <li><b>02</b><strong>Adapt</strong><span>Lead with applications relevant to each group's work.</span></li>
+        <li><b>03</b><strong>Invite</strong><span>Give recipients a clear route to explore further.</span></li>
+        <li><b>04</b><strong>Measure</strong><span>Review click performance across the sends.</span></li>
+      </ol>
+    </section>
+
+    <section class="mb-section" aria-labelledby="mb-results-title">
+      <div class="mb-outcome">
+        <span class="mb-eyebrow">03 · Outcome</span>
+        <h2 id="mb-results-title">6%–12% email click rates</h2>
+        <p>Industry-segmented outreach in October 2026 generated click rates ranging from 6% to 12%.</p>
+        <p class="mb-note">These are engagement metrics, not confirmed meetings or sales conversions.</p>
+      </div>
+      <p class="mb-credit"><b>My role:</b> Audience segmentation, message development, email campaign execution and performance review.</p>
+    </section>
+
+    <nav class="pager" aria-label="More case studies">
+      <a href="case-tiff-alt.html"><small>Previous</small>TIFF: The Market</a>
+      <a href="case-website.html"><small>Next</small>Website and Inspiration</a>
+    </nav>
+  </div>
+</main>
+
 
   <footer class="site-foot">
     <div class="wrap">

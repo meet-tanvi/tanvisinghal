@@ -191,3 +191,69 @@
   filters.forEach(function (button) { button.addEventListener('click', function () { select(button.getAttribute('data-writing-filter')); }); });
   select('all');
 })();
+
+
+/* Shared Work dropdown: preserves the ordinary Work link if JavaScript is unavailable.
+   A separate disclosure button expands category links on desktop and mobile. */
+(function () {
+  'use strict';
+  if (!document.querySelector('link[href*="css/site.css"]')) return;
+  var link = document.querySelector('.site-nav > a[href="work.html"]');
+  if (!link || document.querySelector('.site-nav .work-menu')) return;
+
+  var items = [
+    ['All work', 'work.html'],
+    ['Corporate communications & PR', 'work-corporate.html'],
+    ['Executive communications', 'work-executive.html'],
+    ['Internal & change communications', 'work-internal.html'],
+    ['Marketing & brand', 'work-marketing.html'],
+    ['Events & exhibitions', 'work-marketing.html#events'],
+    ['Digital & social media', 'work-digital.html'],
+    ['CSR & community impact', 'work-impact.html']
+  ];
+  var holder = document.createElement('div');
+  holder.className = 'work-menu';
+  link.parentNode.insertBefore(holder, link);
+  holder.appendChild(link);
+  var toggle = document.createElement('button');
+  toggle.type = 'button';
+  toggle.className = 'work-menu-toggle';
+  toggle.setAttribute('aria-label', 'Browse work by area');
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-controls', 'work-menu-panel');
+  toggle.innerHTML = '<span class="work-menu-chevron" aria-hidden="true"></span>';
+  holder.appendChild(toggle);
+
+  var panel = document.createElement('div');
+  panel.className = 'work-menu-panel';
+  panel.id = 'work-menu-panel';
+  panel.hidden = true;
+  items.forEach(function (item, index) {
+    var a = document.createElement('a');
+    a.href = item[1];
+    a.textContent = item[0];
+    if (index === 0) a.className = 'work-menu-all';
+    var currentPath = location.pathname.split('/').pop() || 'index.html';
+    if (index > 0 && item[1].indexOf('#') === -1 && currentPath === item[1]) {
+      a.setAttribute('aria-current', 'page');
+    }
+    panel.appendChild(a);
+  });
+  holder.appendChild(panel);
+
+  function setOpen(open) {
+    panel.hidden = !open;
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  toggle.addEventListener('click', function () { setOpen(panel.hidden); });
+  document.addEventListener('click', function (e) { if (!holder.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !panel.hidden) { setOpen(false); toggle.focus(); }
+  });
+  holder.addEventListener('focusout', function (e) {
+    if (!e.relatedTarget || !holder.contains(e.relatedTarget)) setOpen(false);
+  });
+  panel.addEventListener('click', function (e) {
+    if (e.target.closest('a')) setOpen(false);
+  });
+})();

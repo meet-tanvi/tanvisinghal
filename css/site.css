@@ -937,6 +937,7 @@ a.writing-card:focus-visible {
   .site-nav .work-menu-toggle { width: 2.75rem; min-height: 3rem; height: auto; border-bottom: 1px solid var(--line); }
   .site-nav .work-menu-panel { position: static; flex: 0 0 100%; width: 100%; box-shadow: none; border: 0; border-radius: 0; border-left: 2px solid var(--line); margin: .4rem 0 .6rem .45rem; padding: .15rem .6rem; background: transparent; }
   .js .site-nav .work-menu-panel a { min-height: 2.35rem; padding: .5rem .65rem; border: 0; font-size: .9rem; }
+  .js .site-nav.open { max-height: calc(100vh - var(--header)); max-height: calc(100dvh - var(--header)); overflow-y: auto; overscroll-behavior: contain; }
   .site-nav .work-menu-panel .work-menu-all { border-radius: 0; border-bottom: 1px solid var(--line) !important; margin-bottom: .2rem; }
 }
 @media (prefers-reduced-motion: reduce) {

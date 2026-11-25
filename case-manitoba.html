@@ -6,44 +6,60 @@
   <link rel="icon" href="favicon.ico?v=3" sizes="any">
   <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
-  <title>Targeted outreach to Manitoba business leaders | Tanvi Singhal</title>
-  <meta name="description" content="A segmented B2B email campaign for Manitoba creative businesses, grounded in audience needs and measured through click rates.">
+  <title>B2B lead generation for Manitoba's creative industries | Tanvi Singhal</title>
+  <meta name="description" content="How I developed segmented B2B email campaigns for Manitoba creative industries, connecting relevant messaging with sales meeting-booking links.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="css/portfolio-alt.css?v=20261112li3">
+  <link rel="stylesheet" href="css/site.css?v=20261123editorial3">
   <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("tsPortfolioTheme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 
 <style>
-/* Manitoba campaign case study */
-.mb-case .intro { padding-bottom: 1rem; }
-.mb-intro { padding-top: clamp(2rem, 5vw, 4rem); padding-bottom: 4rem; }
-.mb-hero { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(15rem,.9fr); gap:clamp(1.5rem,4vw,4.5rem); align-items:center; }
-.mb-lead { font-size:clamp(1.15rem,1.85vw,1.5rem); line-height:1.48; color:var(--muted); max-width:37rem; margin-top:1rem; }
-.mb-kpi { padding:1.55rem 1.75rem; background:var(--tint); border-radius:var(--radius); border:1px solid var(--line); }
-.mb-kpi .mb-kicker { color:var(--soft); display:block; font-size:.8rem; font-weight:600; letter-spacing:.04em; text-transform:uppercase; }
-.mb-kpi strong { display:block; font-family:var(--serif); font-weight:500; color:var(--ink); font-size:clamp(3.6rem,6vw,5.1rem); line-height:1.04; margin:.8rem 0 .3rem; }
-.mb-kpi small { display:block; color:var(--muted); line-height:1.5; }
-.mb-section { margin-top:2.75rem; padding-top:2.5rem; border-top:1px solid var(--line); }
-.mb-section h2 { font-size:clamp(1.55rem,2.6vw,2.2rem); margin-bottom:1.25rem; }
-.mb-eyebrow { display:block; color:var(--soft); font-size:.83rem; font-weight:600; text-transform:uppercase; letter-spacing:.06em; margin-bottom:.6rem; }
-.mb-audience { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
-.mb-audience article { padding:1.4rem; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); }
-.mb-audience h3 { font-family:var(--serif); font-size:clamp(1.35rem,2vw,1.7rem); font-weight:500; margin-bottom:.55rem; }
-.mb-audience p { color:var(--muted); line-height:1.55; }
-.mb-flow { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.8rem; list-style:none; }
-.mb-flow li { position:relative; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); padding:1.1rem 1.05rem; min-height:10rem; }
-.mb-flow li b { display:block; font-size:.8rem; color:var(--accent); letter-spacing:.03em; margin-bottom:.9rem; }
-.mb-flow li strong { display:block; font-size:1rem; font-weight:600; margin-bottom:.4rem; }
-.mb-flow li span { color:var(--muted); display:block; font-size:.9rem; line-height:1.5; }
-.mb-outcome { background:var(--band); color:var(--on-band); padding:clamp(1.3rem,3vw,2.4rem); border-radius:var(--radius); }
-.mb-outcome h2 { color:var(--on-band); margin-bottom:.65rem; }
-.mb-outcome p { color:var(--on-band-muted); max-width:55rem; }
-.mb-outcome .mb-note { margin-top:.75rem; font-size:.86rem; }
-.mb-credit { padding:1.15rem 0 0; color:var(--muted); font-size:.96rem; }
-.mb-case .pager { margin-top:3rem; }
-@media(max-width:800px){.mb-hero{grid-template-columns:1fr}.mb-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.mb-audience,.mb-flow{grid-template-columns:1fr}.mb-flow li{min-height:auto}.mb-intro{padding-bottom:2.5rem}}
+/* Manitoba: editorial lead-generation case study */
+.mb-case .intro{padding-block:clamp(2.6rem,5vw,4.5rem) clamp(2.2rem,4vw,3.5rem)}
+.mb-case .intro h1{max-width:21ch;font-size:clamp(2.5rem,4.2vw,4rem);line-height:1.08}
+.mb-case .cs-tags{margin-top:1.05rem;font-weight:500}
+.mb-case .mb-deck{font-size:clamp(1.14rem,1.8vw,1.42rem);line-height:1.53;color:var(--muted);max-width:46rem;margin-top:1.4rem}
+.mb-page{padding-block:1.1rem clamp(3rem,6vw,5rem)}
+.mb-editorial{display:grid;grid-template-columns:minmax(11rem,.47fr) minmax(0,1fr);gap:1.6rem clamp(2.5rem,7vw,6rem);padding-block:clamp(2.7rem,5vw,4.5rem);border-bottom:1px solid var(--line)}
+.mb-editorial:last-of-type{border-bottom:0}
+.mb-section-label{font-size:.79rem;text-transform:uppercase;letter-spacing:.075em;font-weight:600;color:var(--soft);margin-bottom:.6rem}
+.mb-editorial h2{font-size:clamp(1.6rem,2.5vw,2.25rem);line-height:1.16;max-width:16ch}
+.mb-copy{max-width:42rem}
+.mb-copy p{font-size:1.04rem;line-height:1.78;color:var(--muted)}
+.mb-copy p+p{margin-top:1rem}
+.mb-copy strong{color:var(--ink);font-weight:600}
+.mb-choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.15rem;margin-top:1.85rem}
+.mb-choice article{border-top:2px solid var(--ink);padding:1.1rem 0 0}
+.mb-choice .mb-id{font-size:.79rem;letter-spacing:.06em;color:var(--soft);font-weight:600}
+.mb-choice h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.25rem,2vw,1.55rem);margin:.5rem 0 .6rem}
+.mb-choice p{font-size:.93rem;line-height:1.65}
+.mb-flow-figure{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:clamp(1rem,2.5vw,2rem);margin-top:1.65rem;max-width:45rem}
+.mb-flow-figure .mb-map-head{font-size:.78rem;font-weight:600;color:var(--soft);letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.15rem}
+.mb-lanes{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.mb-lane{background:var(--tint);padding:1rem .85rem;border-radius:6px;border:1px solid var(--line);text-align:center}
+.mb-lane b{display:block;font-size:.96rem;font-weight:600;line-height:1.4}
+.mb-lane small{display:block;color:var(--muted);font-size:.81rem;line-height:1.45;margin-top:.3rem}
+.mb-flow-stem{width:1px;background:var(--soft);height:1.15rem;margin-inline:auto;opacity:.6}
+.mb-flow-center{display:grid;grid-template-columns:1fr;justify-items:center;gap:0}
+.mb-flow-bar{width:62%;height:1px;background:var(--soft);opacity:.6}
+.mb-stage{width:min(100%,26rem);padding:.85rem 1rem;text-align:center;background:var(--band);border-radius:6px;color:var(--on-band)}
+.mb-stage b{display:block;font-size:1rem;font-weight:600}
+.mb-stage small{display:block;color:var(--on-band-muted);font-size:.82rem;margin-top:.13rem;line-height:1.4}
+.mb-stage.mb-stage-final{background:var(--tint);color:var(--ink);border:1px solid var(--line)}
+.mb-stage.mb-stage-final small{color:var(--muted)}
+.mb-flow-figure figcaption{font-size:.83rem;line-height:1.6;color:var(--soft);margin-top:1.15rem}
+.mb-result{display:flex;align-items:center;gap:clamp(1.25rem,3vw,2.4rem);padding:1.2rem 0;border-top:2px solid var(--ink);margin-top:1.65rem}
+.mb-result strong{font-family:var(--serif);font-weight:500;font-size:clamp(2.75rem,5vw,4.4rem);white-space:nowrap;line-height:1.08;letter-spacing:-.035em}
+.mb-result span{display:block;color:var(--muted);font-size:1rem;line-height:1.55}
+.mb-result span b{color:var(--ink);font-weight:600}
+.mb-result-note{font-size:.86rem!important;line-height:1.5!important;color:var(--soft)!important;margin-top:.4rem!important}
+.mb-role{margin-top:1.8rem;border-left:2px solid var(--accent);padding-left:1.1rem}
+.mb-role b{font-size:.88rem;color:var(--ink)}
+.mb-role p{font-size:.94rem;line-height:1.65;margin-top:.35rem}
+.mb-page .pager{margin-top:2.5rem}
+@media(max-width:850px){.mb-editorial{grid-template-columns:1fr;gap:1.25rem}.mb-editorial h2{max-width:none}.mb-case .intro h1{max-width:27ch}}
+@media(max-width:550px){.mb-choice{grid-template-columns:1fr;gap:1rem}.mb-flow-figure{padding:1rem}.mb-lane{padding:.8rem .5rem}.mb-lane b{font-size:.86rem}.mb-lane small{font-size:.74rem}.mb-result{display:block}.mb-result span{margin-top:.5rem}.mb-page{padding-top:0}.mb-case .intro h1{max-width:none}}
 </style>
 </head>
 <body>
@@ -51,12 +67,12 @@
 
   <header class="site-head">
     <div class="wrap">
-      <a class="brand" href="portfolio-alt.html">Tanvi Singhal</a>
+      <a class="brand" href="index.html">Tanvi Singhal</a>
       <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><svg class="open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
       <nav class="site-nav" id="site-nav" aria-label="Main">
-        <a href="work-alt.html" aria-current="page">Work</a>
-        <a href="writing-alt.html">Writing</a>
-        <a href="experience-alt.html">Experience</a>
+        <a href="work.html" aria-current="page">Work</a>
+        <a href="writing.html">Writing</a>
+        <a href="experience.html">Experience</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         
@@ -68,64 +84,95 @@
 
   
 <main id="main" class="mb-case">
-  <div class="intro">
+  <header class="intro">
     <div class="wrap">
-      <p class="crumb"><a href="case-studies-alt.html">Case studies</a> <span aria-hidden="true">/</span> Manitoba outreach</p>
-      <h1>Targeted outreach to Manitoba business leaders</h1>
-      <p class="cs-tags">Moonlite Labs &middot; B2B email marketing &middot; October 2026</p>
+      <p class="crumb"><a href="case-studies.html">Case studies</a> <span aria-hidden="true">/</span> Manitoba outreach</p>
+      <h1>Building a B2B lead-generation pathway for Manitoba's creative industries</h1>
+      <p class="cs-tags">Moonlite Labs &middot; B2B marketing and lead generation &middot; October 2026</p>
+      <p class="mb-deck">I developed industry-specific email outreach for Manitoba businesses, connecting tailored messaging with a direct opportunity to book a meeting with the sales team.</p>
     </div>
-  </div>
-  <div class="wrap mb-intro">
-    <section class="mb-hero" aria-label="Campaign summary">
+  </header>
+
+  <div class="wrap mb-page">
+    <section class="mb-editorial" aria-labelledby="mb-context">
       <div>
-        <span class="mb-eyebrow">The opportunity</span>
-        <p class="mb-lead">Different industries have different reasons to explore creative AI. I developed separate email campaigns for film and television professionals and advertising and marketing audiences, rather than relying on a single generic message.</p>
+        <p class="mb-section-label">01 / The brief</p>
+        <h2 id="mb-context">A commercial objective, two audiences</h2>
       </div>
-      <div class="mb-kpi">
-        <span class="mb-kicker">Measured response</span>
-        <strong>6%–12%</strong>
-        <small>Click rates across the industry-segmented email campaigns</small>
-      </div>
-    </section>
-
-    <section class="mb-section" aria-labelledby="mb-audience-title">
-      <span class="mb-eyebrow">01 · Audience strategy</span>
-      <h2 id="mb-audience-title">One product, two industry perspectives</h2>
-      <div class="mb-audience">
-        <article>
-          <h3>Film &amp; television</h3>
-          <p>Position the platform in the context of production and visual storytelling workflows.</p>
-        </article>
-        <article>
-          <h3>Advertising &amp; marketing</h3>
-          <p>Connect the platform's capabilities with the work of developing and refining creative content.</p>
-        </article>
+      <div class="mb-copy">
+        <p>Moonlite Labs wanted to reach potential business customers in Manitoba and create opportunities for sales conversations. The target sectors were film and television, and advertising and marketing. Both work with visual content, but their priorities and production contexts differ.</p>
+        <p>The challenge was to make the outreach relevant to each sector and give interested recipients a straightforward next step, rather than rely on a generic product introduction.</p>
       </div>
     </section>
 
-    <section class="mb-section" aria-labelledby="mb-process-title">
-      <span class="mb-eyebrow">02 · Campaign approach</span>
-      <h2 id="mb-process-title">From audience to message to response</h2>
-      <ol class="mb-flow">
-        <li><b>01</b><strong>Segment</strong><span>Organize outreach by professional audience.</span></li>
-        <li><b>02</b><strong>Adapt</strong><span>Lead with applications relevant to each group's work.</span></li>
-        <li><b>03</b><strong>Invite</strong><span>Give recipients a clear route to explore further.</span></li>
-        <li><b>04</b><strong>Measure</strong><span>Review click performance across the sends.</span></li>
-      </ol>
+    <section class="mb-editorial" aria-labelledby="mb-strategy">
+      <div>
+        <p class="mb-section-label">02 / Audience strategy</p>
+        <h2 id="mb-strategy">Segment first, then shape the message</h2>
+      </div>
+      <div class="mb-copy">
+        <p>I developed separate email campaigns for the two industries so that the positioning and language could reflect their different professional contexts. <strong>The segmentation was a messaging decision, not simply a way to divide a mailing list.</strong></p>
+        <div class="mb-choice" aria-label="Targeted industry audiences">
+          <article>
+            <span class="mb-id">AUDIENCE 01</span>
+            <h3>Film &amp; television</h3>
+            <p>Dedicated outreach framed for film and television businesses and their production context.</p>
+          </article>
+          <article>
+            <span class="mb-id">AUDIENCE 02</span>
+            <h3>Advertising &amp; marketing</h3>
+            <p>Separate outreach adapted for advertising, agency and marketing-oriented work.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="mb-section" aria-labelledby="mb-results-title">
-      <div class="mb-outcome">
-        <span class="mb-eyebrow">03 · Outcome</span>
-        <h2 id="mb-results-title">6%–12% email click rates</h2>
-        <p>Industry-segmented outreach in October 2026 generated click rates ranging from 6% to 12%.</p>
-        <p class="mb-note">These are engagement metrics, not confirmed meetings or sales conversions.</p>
+    <section class="mb-editorial" aria-labelledby="mb-pathway">
+      <div>
+        <p class="mb-section-label">03 / Lead-generation design</p>
+        <h2 id="mb-pathway">A clear route from outreach to sales</h2>
       </div>
-      <p class="mb-credit"><b>My role:</b> Audience segmentation, message development, email campaign execution and performance review.</p>
+      <div class="mb-copy">
+        <p>Each campaign included a meeting-booking link connected to the sales team. Instead of ending with a general invitation to explore the product, the email gave interested prospects a specific way to request a conversation.</p>
+        <figure class="mb-flow-figure" aria-labelledby="mb-path-label">
+          <p class="mb-map-head" id="mb-path-label">How the campaign was structured</p>
+          <div class="mb-lanes">
+            <div class="mb-lane"><b>Film &amp; television</b><small>Industry-specific email</small></div>
+            <div class="mb-lane"><b>Advertising &amp; marketing</b><small>Industry-specific email</small></div>
+          </div>
+          <div class="mb-flow-center">
+            <div class="mb-flow-bar"></div>
+            <div class="mb-flow-stem"></div>
+            <div class="mb-stage"><b>Meeting-booking link</b><small>Call to action in the outreach</small></div>
+            <div class="mb-flow-stem"></div>
+            <div class="mb-stage mb-stage-final"><b>Sales team</b><small>Destination for meeting requests</small></div>
+          </div>
+          <figcaption>Two tailored campaign streams connected potential customers to the sales team's booking process.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="mb-editorial" aria-labelledby="mb-results">
+      <div>
+        <p class="mb-section-label">04 / Measured response</p>
+        <h2 id="mb-results">Email engagement</h2>
+      </div>
+      <div class="mb-copy">
+        <p>The October campaigns recorded click rates ranging from 6% to 12%, the strongest email click-rate results reported that year in the available campaign summary.</p>
+        <div class="mb-result" aria-label="Email click rates ranged from 6 to 12 percent">
+          <strong>6%–12%</strong>
+          <span><b>Email click rates</b><span>Across the industry-segmented Manitoba sends</span></span>
+        </div>
+        <p class="mb-result-note">Click rates measure engagement with email links; they are not confirmed meeting or sales conversion rates.</p>
+        <div class="mb-role">
+          <b>My contribution</b>
+          <p>Audience segmentation, industry-specific campaign messaging, email execution and performance analysis, with a meeting-booking call to action connecting marketing outreach to sales.</p>
+        </div>
+      </div>
     </section>
 
     <nav class="pager" aria-label="More case studies">
-      <a href="case-tiff-alt.html"><small>Previous</small>TIFF: The Market</a>
+      <a href="case-tiff.html"><small>Previous</small>TIFF: The Market</a>
       <a href="case-website.html"><small>Next</small>Website and Inspiration</a>
     </nav>
   </div>

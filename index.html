@@ -44,11 +44,14 @@
     .alt-home .alt-project p { margin-top: 0.45rem; color: var(--muted); font-size: 0.92rem; line-height: 1.55; }
     .alt-home .alt-project .go { margin-top: auto; padding-top: 1rem; color: var(--accent); font-size: 0.87rem; font-weight: 600; }
     .alt-home .alt-tinted { background: var(--tint); }
-    .alt-home .alt-expertise { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 3.2rem; margin-top: 0.4rem; }
-    .alt-home .alt-area { display: flex; align-items: center; justify-content: space-between; gap: 0.9rem; min-height: 5.8rem; border-top: 1px solid var(--line); text-decoration: none; }
-    .alt-home .alt-area strong { display: block; font-size: 1rem; font-weight: 600; line-height: 1.4; }
-    .alt-home .alt-area small { display: block; margin-top: 0.2rem; color: var(--muted); font-size: 0.89rem; line-height: 1.45; }
-    .alt-home .alt-area .arrow { color: var(--accent); font-size: 1.15rem; transition: transform .18s ease; }
+    /* Compact homepage navigation, placed immediately after the introduction. */
+    .alt-home #expertise { padding-block: clamp(2rem, 3.6vw, 3rem); }
+    .alt-home #expertise .alt-section-heading { margin-bottom: 1.1rem; }
+    .alt-home #expertise .alt-section-heading h2 { font-size: clamp(1.5rem, 2.25vw, 1.95rem); }
+    .alt-home .alt-expertise { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 1.8rem; }
+    .alt-home .alt-area { display: flex; align-items: center; justify-content: space-between; gap: .85rem; min-width: 0; min-height: 4rem; padding-block: .75rem; border-top: 1px solid var(--line); text-decoration: none; }
+    .alt-home .alt-area strong { display: block; font-size: .94rem; font-weight: 600; line-height: 1.42; }
+    .alt-home .alt-area .arrow { color: var(--accent); font-size: 1.05rem; flex: none; transition: transform .18s ease; }
     .alt-home .alt-area:hover strong { color: var(--accent); }
     .alt-home .alt-area:hover .arrow { transform: translate(2px, -2px); }
     .alt-home .alt-close { background: var(--band); color: var(--on-band); padding-block: clamp(3rem, 5vw, 4.5rem); }
@@ -63,6 +66,7 @@
     @media (max-width: 900px) {
       .alt-home .alt-hero-grid { grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr); gap: 2rem; }
       .alt-home .alt-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .alt-home .alt-expertise { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 650px) {
       .alt-home .alt-hero { padding-block: 2.6rem 3rem; }
@@ -123,7 +127,24 @@
       </div>
     </section>
 
-    <div class="alt-divider" aria-hidden="true"></div>
+    <section class="alt-section alt-tinted" id="expertise" aria-labelledby="expertise-title">
+      <div class="wrap">
+        <div class="alt-section-heading">
+          <div>
+            <h2 id="expertise-title">Explore by area of work</h2>
+          </div>
+        </div>
+        <div class="alt-expertise">
+          <a class="alt-area" href="work-corporate.html"><strong>Corporate communications &amp; PR</strong><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-executive.html"><strong>Executive communications</strong><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-internal.html"><strong>Internal &amp; change communications</strong><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-marketing.html"><strong>Marketing, brand &amp; events</strong><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-digital.html"><strong>Digital &amp; social media</strong><span class="arrow" aria-hidden="true">&nearr;</span></a>
+          <a class="alt-area" href="work-impact.html"><strong>CSR &amp; community impact</strong><span class="arrow" aria-hidden="true">&nearr;</span></a>
+        </div>
+      </div>
+    </section>
+
 
     <section class="alt-section" id="selected" aria-labelledby="selected-title">
       <div class="wrap">
@@ -162,24 +183,6 @@
               <span class="go">Read the case study &rarr;</span>
             </div>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="alt-section alt-tinted" id="expertise" aria-labelledby="expertise-title">
-      <div class="wrap">
-        <div class="alt-section-heading">
-          <div>
-            <h2 id="expertise-title">Explore by area of work</h2>
-          </div>
-        </div>
-        <div class="alt-expertise">
-          <a class="alt-area" href="work-corporate.html"><span><strong>Corporate communications &amp; media relations</strong><small>Corporate news, media materials and reputation</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a class="alt-area" href="work-executive.html"><span><strong>Executive communications &amp; thought leadership</strong><small>Executive messages, speaker materials and bylined work</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a class="alt-area" href="work-internal.html"><span><strong>Internal &amp; change communications</strong><small>Employee engagement, leadership messaging and change</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a class="alt-area" href="work-marketing.html"><span><strong>Marketing, brand &amp; campaigns</strong><small>Integrated campaigns, branding and event marketing</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a class="alt-area" href="work-digital.html"><span><strong>Digital &amp; social media</strong><small>Content strategy, social performance and web</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
-          <a class="alt-area" href="work-impact.html"><span><strong>CSR, community &amp; public impact</strong><small>Public-information campaigns and impact storytelling</small></span><span class="arrow" aria-hidden="true">&nearr;</span></a>
         </div>
       </div>
     </section>
